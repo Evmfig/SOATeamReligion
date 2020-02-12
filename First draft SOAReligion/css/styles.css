@@ -46,10 +46,10 @@ h4,
 .h2,
 .h3,
 .h4 {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
-    color: var(--dk-yellow);
+    /* color: var(--dk-yellow); */
 }
 
 .display-1,
@@ -141,13 +141,15 @@ p {
 
 /* background cover */
 .bkgd-image-1 {
-    background: url(../images/Ninjawalk.jpg);
+    background: url(../images/wedlunchchurch.JPG);
     background-color: #444444;
     height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    opacity: 0.75;
+
 }
 
 .bkgd-image-2 {
