@@ -141,14 +141,14 @@ p {
 
 /* background cover */
 .bkgd-image-1 {
-    background: url(../images/wedlunchchurch.JPG);
+    background: url(../images/wedlunchchurchcopy.jpg);
     background-color: #444444;
     height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    opacity: 0.75;
+    /* opacity: 0.75; */
 
 }
 
@@ -295,7 +295,7 @@ p {
 
 /* MARGINS, PADDING */
 .more-padding {
-    padding: 2.5rem !important;
+    padding: 5rem !important;
 }
 
 .more-padding-bold {
@@ -307,7 +307,7 @@ p {
 }
 
 .padding-top {
-    padding-top: 2rem;
+    padding-top: 12rem;
 }
 
 .padding-bottom {
@@ -461,7 +461,7 @@ p {
 
 .btn-group-sm.btn,
 .btn-sm {
-    padding: .25rem .9rem;
+    padding: .50rem .15rem;
     font-size: .875rem;
     line-height: 1.5;
     border-radius: .2rem;
@@ -675,10 +675,18 @@ p {
 }
 
 /* Style all font awesome icons */
-.fa {
+.xfa {
     padding: 10px;
     font-size: 30px;
     width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.fas {
+    padding: 50px;
+    font-size: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
