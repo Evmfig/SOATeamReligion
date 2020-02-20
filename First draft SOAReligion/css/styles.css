@@ -295,7 +295,7 @@ p {
 
 /* MARGINS, PADDING */
 .more-padding {
-    padding: 5rem !important;
+    padding: 3rem !important;
 }
 
 .more-padding-bold {
@@ -307,7 +307,7 @@ p {
 }
 
 .padding-top {
-    padding-top: 12rem;
+    padding-top: 5rem;
 }
 
 .padding-bottom {
@@ -466,6 +466,22 @@ p {
     line-height: 1.5;
     border-radius: .2rem;
 }
+
+.btn-outline-dark {
+    color: #ffffff;
+    /* border-color: #343a40; */
+    background-color: #8693AB;
+    padding: .40rem .75rem;
+}
+
+.btn-lg {
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+
 
 /* FOOTER */
 .dark-footer {
@@ -685,7 +701,7 @@ p {
 }
 
 .fas {
-    padding: 50px;
+    padding: 25px;
     font-size: 50px;
     text-align: center;
     text-decoration: none;
