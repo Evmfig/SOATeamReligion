@@ -349,6 +349,26 @@ header .overlay {
     width: 100%;
 }
 
+.hover-profile1 {
+    position: relative;
+    width: 100%;
+}
+
+.hover-profile2 {
+    position: relative;
+    width: 100%;
+}
+
+.hover-profile3 {
+    position: relative;
+    width: 100%;
+}
+
+.hover-profile4 {
+    position: relative;
+    width: 100%;
+}
+
 .image {
     display: block;
     width: 100%;
@@ -407,18 +427,18 @@ header .overlay {
     background-color: #001CBA;
 }
 
-.container-profile:hover .overlay-profile1 {
+.hover-profile1:hover .overlay-profile1 {
     opacity: 0;
 }
 
-.container-profile:hover .overlay-profile2 {
+.hover-profile2:hover .overlay-profile2 {
     opacity: 0;
 }
 
-.container-profile:hover .overlay-profile3 {
+.hover-profile3:hover .overlay-profile3 {
     opacity: 0;
 }
 
-.container-profile:hover .overlay-profile4 {
+.hover-profile4:hover .overlay-profile4 {
     opacity: 0;
 }
