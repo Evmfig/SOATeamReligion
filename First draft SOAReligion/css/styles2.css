@@ -255,6 +255,27 @@ header .overlay {
     padding-right: 0 !important;
 }
 
+.margin-islam {
+    margin-top: 0rem;
+    margin-left: 0rem;
+}
+
+.margin-christian {
+    margin-top: -50rem;
+    margin-left: 20rem;
+}
+
+.margin-paganism {
+    margin-top: -50rem;
+    margin-left: 40rem;
+}
+
+.margin-buddha {
+    margin-top: -50rem;
+    margin-left: 60rem;
+}
+
+
 /* font awesome icon */
 .fas {
     padding: 25px;
@@ -355,7 +376,7 @@ header .overlay {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    opacity: 0.5;
     transition: .5s ease;
     background-color: #004CBA;
 }
@@ -368,7 +389,7 @@ header .overlay {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    opacity: 0.5;
     transition: .5s ease;
     background-color: #005FBA;
 }
@@ -381,7 +402,7 @@ header .overlay {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    opacity: 0.5;
     transition: .5s ease;
     background-color: #001CBA;
 }
@@ -391,13 +412,13 @@ header .overlay {
 }
 
 .container-profile:hover .overlay-profile2 {
-    opacity: 1;
+    opacity: 0;
 }
 
 .container-profile:hover .overlay-profile3 {
-    opacity: 1;
+    opacity: 0;
 }
 
 .container-profile:hover .overlay-profile4 {
-    opacity: 1;
+    opacity: 0;
 }
