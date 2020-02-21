@@ -1,7 +1,94 @@
+/* apply google fonts to specific styles */
+h5,
+h6,
+.h5,
+.h6 {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h5,
+.h5 {
+    color: var(--dark) !important;
+    font-size: 1.2rem;
+}
+
+.h6,
+h6 {
+    font-size: 3rem;
+}
+
+h4,
+.h4 {
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    /* color: var(--dk-yellow); */
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+}
+
+.display-5 {
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.black-text {
+    color: #000000;
+}
+
+.black-text {
+    color: #000000
+}
+
+a {
+    color: #000000
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+    margin-top: -4px;
+    margin-bottom: 1rem;
+}
+
+/* video background */
 header {
     position: relative;
     background-color: black;
-    height: 75vh;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -46,4 +133,148 @@ header .overlay {
     header video {
         display: none;
     }
+}
+
+/* MARGINS, PADDING */
+.more-padding {
+    padding: 3rem !important;
+}
+
+.more-padding-bold {
+    padding: 5rem !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.padding-top {
+    padding-top: 5rem;
+}
+
+.padding-bottom {
+    padding-bottom: 2rem;
+}
+
+.padding-bottom-super {
+    padding-bottom: 20rem;
+}
+
+.padding-right {
+    padding-right: 0.7rem !important;
+}
+
+.padding-left {
+    padding-left: 1rem !important;
+}
+
+.padding-left2 {
+    padding-left: 3rem;
+}
+
+.padding-left3 {
+    padding-left: 16rem;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-margin-bottom {
+    margin: 0rem !important;
+}
+
+.margin-center {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 20rem;
+}
+
+.margin-bottom {
+    margin-bottom: 2rem;
+}
+
+.margin-top {
+    margin-top: 1rem;
+
+}
+
+.margin-top2 {
+    margin-top: 3rem;
+
+}
+
+.margin-up {
+    margin-top: -2rem;
+}
+
+.show-bkgd {
+    border: #cccccc;
+    background-color: #dddddd;
+}
+
+.v-fill {
+    height: 100%;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.img-status {
+    position: relative;
+    top: -75px;
+}
+
+.form-comment {
+    padding: .50rem .5rem;
+    border-radius: 20;
+}
+
+.row2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: -97px;
+}
+
+.no-margin-right {
+    margin-right: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+/* font awesome icon */
+.fas {
+    padding: 25px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.fas {
+    padding: 25px;
+    font-size: 55px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+/* background cover */
+.bkgd-image-1 {
+    background: url(../images/wedlunchchurchcopy.jpg);
+    background-color: #444444;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* opacity: 0.75; */
+
 }
