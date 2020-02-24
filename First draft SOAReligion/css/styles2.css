@@ -12,7 +12,7 @@ h6,
 h5,
 .h5 {
     color: var(--dark) !important;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .h6,
@@ -501,6 +501,7 @@ header .overlay {
     color: #fff;
     background-color: transparent;
     border-color: #fff;
+    position: relative;
 }
 
 /*sidenav*/
