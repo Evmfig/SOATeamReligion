@@ -301,7 +301,7 @@ header .overlay {
 
 /* background cover */
 .bkgd-image-1 {
-    background: url(../images/wedlunchchurchcopy.jpg);
+    background: url(../images/Edit02.JPG);
     background-color: #444444;
     height: 800px;
     background-position: center;
@@ -337,7 +337,7 @@ header .overlay {
 }
 
 .bkgd-image-4 {
-    background: url(../images/Buddhism.JPG);
+    background: url(../images/Edit04.JPG);
     background-color: #444444;
     height: 800px;
     background-position: center;
@@ -415,7 +415,7 @@ header .overlay {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.75;
     transition: .75s ease;
     background-color: #b2dbbf;
 }
@@ -428,7 +428,7 @@ header .overlay {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.75;
     transition: .75s ease;
     background-color: #fffdbc;
 }
@@ -502,6 +502,17 @@ header .overlay {
     background-color: transparent;
     border-color: #fff;
     position: relative;
+    z-index: 9999;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    height: 55px;
+    width: 125px;
+    align-items: center;
+
 }
 
 /*sidenav*/
@@ -552,4 +563,75 @@ header .overlay {
     .sidenav a {
         font-size: 18px;
     }
+}
+
+/* bottom nav bar */
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    outline: #fff;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
 }
