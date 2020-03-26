@@ -9,6 +9,8 @@ h6,
     letter-spacing: 1px;
 }
 
+
+
 h5,
 .h5 {
     color: var(--dark) !important;
@@ -36,6 +38,7 @@ h4,
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
+    font-size: 5rem;
     /* color: var(--dk-yellow); */
 }
 
@@ -49,9 +52,9 @@ h4,
 }
 
 .display-5 {
-    font-size: 4.5rem;
-    line-height: 1;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    /* line-height: 1; */
+    /* margin-bottom: 2rem; */
 }
 
 .centered {
