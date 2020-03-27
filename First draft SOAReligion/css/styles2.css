@@ -25,16 +25,20 @@ h6 {
 h4,
 .h4 {
     font-size: 1rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 3rem;
 }
 
 h1,
 h2,
 h3,
-h4,
+
 .h1,
 .h2,
 .h3,
-.h4 {
+    {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
@@ -138,6 +142,7 @@ header .overlay {
     }
 }
 
+
 /* MARGINS, PADDING */
 .container-fluid,
 .container-lg,
@@ -221,7 +226,7 @@ header .overlay {
 .margin-seestories {
     margin-left: 5rem;
     margin-right: 1rem;
-    margin-top: 35rem;
+    margin-top: 30rem;
 }
 
 .margin-bottom {
@@ -325,7 +330,7 @@ header .overlay {
 .bkgd-image-1 {
     background: url(../images/portrait_Barb.JPG);
     background-color: #444444;
-    height: 800px;
+    height: 640px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -337,7 +342,7 @@ header .overlay {
 .bkgd-image-2 {
     background: url(../images/portrait_Danny.JPG);
     background-color: #444444;
-    height: 800px;
+    height: 640px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -349,7 +354,7 @@ header .overlay {
 .bkgd-image-3 {
     background: url(../images/portrait_Habiba.jpg);
     background-color: #444444;
-    height: 800px;
+    height: 640px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -523,6 +528,14 @@ header .overlay {
     color: #fff;
     background-color: transparent;
     border-color: #fff;
+    position: relative;
+    z-index: 9999;
+}
+
+.btn-primary-profile {
+    color: #fff;
+    /* background-color: transparent; */
+    /* border-color: #fff; */
     position: relative;
     z-index: 9999;
 }
