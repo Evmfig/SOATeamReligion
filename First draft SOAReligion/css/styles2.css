@@ -212,6 +212,12 @@ header .overlay {
     margin-top: 1rem;
 }
 
+.margin-center3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 25rem;
+}
+
 .margin-seestories {
     margin-left: 5rem;
     margin-right: 1rem;
