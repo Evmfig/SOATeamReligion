@@ -382,6 +382,18 @@ header .overlay {
 
 }
 
+.bkgd-image-5 {
+    background: url(../images/bgimg5.jpg);
+    background-color: #444444;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* opacity: 0.75; */
+
+}
+
 /* overlay button */
 .hover-button1 {
     position: relative;
@@ -852,6 +864,7 @@ header .overlay {
 
 .w3-animate-fading1 {
     animation: fading 5s infinite;
+
 }
 
 .w3-animate-fading2 {
@@ -862,6 +875,67 @@ header .overlay {
     animation: fading 10s infinite;
 }
 
-.w3-animate-fading3 {
+.w3-animate-fading4 {
     animation: fading 15s infinite;
+}
+
+.w3-animate-fading5 {
+    animation: fading 2s infinite;
+}
+
+/* arrow */
+i {
+    border: solid white;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 6px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* color */
+
+:root {
+    --yellow: #f0b00e;
+    --md-yellow: #bb890a;
+    --dk-yellow: #775600;
+    --lt-yellow: #e4dfcc;
+    --lt-lt-yellow: #eeebdf;
+    --magenta: #bb0a65;
+    --main-green: #82941C;
+    --black: #212529;
+}
+
+.bg-dark {
+    background-color: var(--black) !important;
+}
+
+.light {
+    background-color: var(--lt-yellow);
+}
+
+.lighter {
+    background-color: var(--lt-lt-yellow);
+}
+
+.green {
+    background-color: var(--main-green)
 }
