@@ -847,3 +847,21 @@ header .overlay {
 .topnav .icon {
     display: none;
 }
+
+/* Animation title */
+
+.w3-animate-fading1 {
+    animation: fading 5s infinite;
+}
+
+.w3-animate-fading2 {
+    animation: fading 8s infinite;
+}
+
+.w3-animate-fading3 {
+    animation: fading 10s infinite;
+}
+
+.w3-animate-fading3 {
+    animation: fading 15s infinite;
+}
