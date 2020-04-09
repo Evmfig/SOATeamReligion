@@ -1,4 +1,4 @@
-/* font-family: 'Barlow Semi Condensed', sans-serif;
+/* font-family: 'Barlow', sans-serif;
 font-family: 'EB Garamond', serif; */
 
 /* ---------- PROGRESS INDICATOR STYLING ---------- */
@@ -135,7 +135,8 @@ footer {
 
 h1,
 h5 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
 }
 
 h4,
@@ -168,13 +169,20 @@ video {
     height: 100%;
 }
 
-#infographic {
-    background-color: burlywood;
-    width: 80%;
-    height: 200px;
+.infographic {
+    background-color: black;
+    width: 50%;
+    min-height: 500px;
     position: relative;
 }
 
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border: 5px solid #F2B646;
+  }
 /* ---------- MEDIA QUERIES ---------- */
 @media screen and (max-width: 800px) {
 

@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta charset="UTF-8">
     <title>Profile Page</title>
+    
+    <!---- Mapbbox ---->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
 
     <!----- Google Fonts ----->
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:800|EB+Garamond&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!----- Bootstrap ----->
     <link href='https://unpkg.com/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' />
@@ -35,7 +40,7 @@
     </section>
 
     <section class="section-title">
-        <h1 id="name">Barb</h1>
+        <h1 id="name">BARB</h1>
         <h2 id="slash">/</h2>
         <h4 id="practicing">Practicing Unitarian Universalist</h4>
         <!----- Menu here? ----->
@@ -78,7 +83,10 @@
 
     <!----- Infographic ----->
     <section class="section-photo">
-        <div id="infographic"></div>
+        <div class="infographic">
+            <div id='map'></div>
+        </div>
+        
     </section>
 
     <!----- Text ----->
@@ -159,7 +167,33 @@
             var scrolled = (winScroll / height) * 100;
             document.getElementById("myBar").style.width = scrolled + "%";
         }
+
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2FyYWhtZWxhcmFnbm8iLCJhIjoiY2pzeXhxbmw2MDFkeTN5bnZ4YmsyNHlxNCJ9.AwJE5-r4wY23--j6tuAq6Q'; // MAPBOX ACCESS TOKEN
+            var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/sarahmelaragno/ck8t69af803cc1ipfocm1cu4q', // SARAH'S STYLE ID
+              center: [-82.091636, 39.313208],
+              zoom: 11.22
+            });
+
+        
+            map.on('click', function(e) {
+            var features = map.queryRenderedFeatures(e.point, {
+            layers: ['all-protestantchristian-denomina', 'islam-habiba', 'interfaith', 'catholic-churches', 'buddhist-danny', 'jewish', 'non-denominational', 'barb-map-info'] 
+            });
+        
+            if (!features.length) {
+              return;
+            }
+            var feature = features[0];
+        
+            var popup = new mapboxgl.Popup({ offset: [0, -15] })
+            .setLngLat(feature.geometry.coordinates)
+            .setHTML('<h2>' + feature.properties.place_name + '</h2><h3>' + feature.properties.denomination + '</h3><p>' +feature.properties.address   + '</p>')
+            .addTo(map);
+            });
     </script>
+
 </body>
 
 </html>
