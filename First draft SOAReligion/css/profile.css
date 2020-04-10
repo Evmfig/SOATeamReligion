@@ -1,4 +1,4 @@
-/* font-family: 'Barlow', sans-serif;
+/* font-family: 'Barlow Semi Condensed', sans-serif;
 font-family: 'EB Garamond', serif; */
 
 /* ---------- PROGRESS INDICATOR STYLING ---------- */
@@ -8,24 +8,20 @@ font-family: 'EB Garamond', serif; */
     top: 0;
     z-index: 1000;
     width: 100%;
-    height: 8px;
-    background: #ccc;
+    height: 20px;
+    background: #D9D9D9;
 }
 
 /* The progress bar (the darker grey scroll indicator) */
 .progress-bar {
-    height: 8px;
-    background: #8794ab;
+    height: 20px;
+    background: #F2B646;
     width: 0%;
 }
 
 /* ---------- SECTION STYLING ---------- */
-/* Header Styling */
-
-
 /* Section Styling */
 .top-nav {
-    position: relative;
     padding: 50px;
 }
 
@@ -69,40 +65,6 @@ font-family: 'EB Garamond', serif; */
     width: 100%;
 }
 
-.section-photo {
-    position: relative;
-    padding: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-.photo-full {
-    position: relative;
-    width: 100%
-}
-
-.vertical-photo {
-    position: relative;
-    display: flex;
-    width: 35%;
-    height: auto;
-    padding: 30px;
-}
-
-.horizontal-photo {
-    position: relative;
-    display: flex;
-    bottom: 128px;
-    width: 45%;
-    height: auto;
-    padding: 30px;
-}
-
-.group-photo {
-    position: relative;
-    display: flex;
-}
-
 .caption {
     position: relative;
     padding: 10px;
@@ -118,22 +80,52 @@ font-family: 'EB Garamond', serif; */
 
 /* Footer Styling */
 footer {
-    background-color: gray;
+    background-color: #D9D9D9;
     position: relative;
     padding: 50px;
     align-items: center;
 }
 
+.link {
+    color: black;
+    text-decoration: none;
+}
+
 /* ---------- TEXT STYLING ---------- */
 /* Heading and Text Styling */
-.logo {
-    width: 100px;
-    height: 60px;
-    background-color: black;
+#logo {
+    color: black;
+    text-decoration: none;
     position: relative;
 }
 
-h1,
+.right-nav {
+    color: #F2B646;
+    text-decoration: none;
+    position: relative;
+}
+
+.right-nav :hover {
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.right-nav :active {
+    color: #F2B646;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+}
+
+h3 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
 h5 {
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
@@ -146,7 +138,10 @@ h6 {
 
 p {
     font-family: 'EB Garamond', serif;
-    padding: 50px 200px 50px 200px;
+}
+
+li {
+    font-family: 'EB Garamond', serif;
 }
 
 /* ---------- ASSET STYLING ---------- */
@@ -157,49 +152,14 @@ img {
 }
 
 .portrait {
+    width: 10%;
+}
+
+.photo {
     width: 30%;
-    position: relative;
-    left: 900px;
-    bottom: 20px;
 }
 
-video {
-    background-color: gray;
-    width: 100%;
-    height: 100%;
-}
-
-.infographic {
-    background-color: black;
-    width: 50%;
-    min-height: 500px;
-    position: relative;
-}
-
-#map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    border: 5px solid #F2B646;
-  }
 /* ---------- MEDIA QUERIES ---------- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {}
 
-    .left,
-    .main,
-    .right {
-        width: 100%;
-        /* The width is 100%, when the viewport is 800px or smaller */
-    }
-}
-
-@media screen and (max-width: 356px) {
-
-    .left,
-    .main,
-    .right {
-        width: 100%;
-        /* The width is 100%, when the viewport is 356px or smaller */
-    }
-}
+@media screen and (max-width: 356px) {}
