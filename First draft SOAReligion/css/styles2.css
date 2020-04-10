@@ -52,6 +52,14 @@ h3,
 }
 
 .display-5 {
+    font-size: 2rem;
+    font-style: italic;
+    /* line-height: 1; */
+    /* margin-bottom: 2rem; */
+    letter-spacing: 0.2px;
+}
+
+.display-6 {
     font-size: 1.25rem;
     font-style: italic;
     /* line-height: 1; */
