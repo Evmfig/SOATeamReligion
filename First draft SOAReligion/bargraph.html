@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <!-- meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <title>Bargraph</title>
+
+    <!-- bootstrap css -->
+    <link href='https://unpkg.com/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' />
+
+    <!-- external css -->
+    <link href='css/styles.css' rel='stylesheet' />
+
+    <!-- internal css -->
+    <style></style>
+</head>
+
+<body>
+    <canvas id="horizontalBar" style="max-width: 500px;"></canvas>
+</body>
+
+
+<!-- bootstrap: jquery, popper, bootstrap -->
+<script src='https://unpkg.com/jquery/dist/jquery.min.js'></script>
+<script src='https://unpkg.com/popper.js/dist/umd/popper.min.js'></script>
+<script src='https://unpkg.com/bootstrap/dist/js/bootstrap.min.js'></script>
+
+
+
+<!-- chart js -->
+<script src='https://unpkg.com/chart.js/dist/Chart.min.js'></script>
+<script>
+    new Chart(document.getElementById("horizontalBar"), {
+        "type": "horizontalBar",
+        "data": {
+            "labels": ['Methodist',
+                'Baptist',
+                'Christian',
+                'Pentecostal',
+                'Presbyterian',
+                'Episcopal',
+                'Evangelical',
+                'Lutheran',
+                'Church of God',
+                'Non-Denominational Christian',
+                'Catholic',
+                'Interfaith',
+                'Jewish',
+                'Buddhist',
+                'Islamic',
+            ],
+            "datasets": [{
+                "label": "Religious and Spiritual Cenetrs in Athens  ",
+                "data": [5, 3, 3, 2, 2, 1, 1, 1, 1, 6, 2, 2, 2, 1, 1, ],
+                "fill": false,
+                "backgroundColor": ["rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
+                    "rgba(169, 169, 169,)", "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
+                    "rgba(169, 169, 169,)", "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
+                    "rgba(169, 169, 169,)", "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
+                    "rgba(169, 169, 169,)", "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
+                    "rgba(169, 169, 169,)"
+                ],
+
+            }]
+        },
+        "options": {
+            "scales": {
+                "xAxes": [{
+                    "ticks": {
+                        "beginAtZero": true
+
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+
+</html>
