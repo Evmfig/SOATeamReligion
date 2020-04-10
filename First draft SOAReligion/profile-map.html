@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!----- Meta Tags ----->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    
+    <!---- Mapbbox ---->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!----- Google Fonts ----->
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:800|EB+Garamond&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!----- Bootstrap ----->
+    <link href='https://unpkg.com/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' />
+
+    <!----- External CSS ----->
+    <link rel="stylesheet" href="css/profile.css">
+
+
+</head>
+
+<body>
+    <!----- Header ----->
+    <header>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </header>
+
+    <!---------- Main Content ---------->
+    <!----- Top Info ----->
+    <section class="top-nav">
+        <div class="logo"></div>
+    </section>
+
+    <section class="section-title">
+        <h1 id="name">BARB</h1>
+        <h2 id="slash">/</h2>
+        <h4 id="practicing">Practicing Unitarian Universalist</h4>
+        <!----- Menu here? ----->
+    </section>
+
+    <!----- Video ----->
+    <section class="section-video">
+        <video width="1920" height="1080" controls>
+            <source src="img/Barb_interview_v2.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!----- Text ----->
+    <section class="section-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac pellentesque urna.
+            Suspendisse ut purus sit amet felis rutrum convallis. Suspendisse auctor eros cursus quam mattis
+            tempor. Cras faucibus, mi sed sodales rhoncus, ex turpis auctor metus, a iaculis dui est quis
+            tortor. Maecenas tempor lacus id fringilla vestibulum. Proin molestie vitae tellus sed imperdiet.
+            Donec convallis, velit sed tincidunt mollis, lorem ex ultricies nisi, ac suscipit ante mauris ut ex.
+            Sed lacinia dapibus nulla, eget scelerisque velit elementum id. Aenean ac nulla ut velit tincidunt
+            interdum nec ac massa. Aliquam diam nisl, efficitur sed ex sed, aliquet interdum magna. Proin libero
+            tellus, fringilla ac hendrerit eget, rutrum in lacus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac pellentesque urna.
+            Suspendisse ut purus sit amet felis rutrum convallis. Suspendisse auctor eros cursus quam mattis
+            tempor. Cras faucibus, mi sed sodales rhoncus, ex turpis auctor metus, a iaculis dui est quis
+            tortor. Maecenas tempor lacus id fringilla vestibulum. Proin molestie vitae tellus sed imperdiet.
+            Donec convallis, velit sed tincidunt mollis, lorem ex ultricies nisi, ac suscipit ante mauris ut ex.
+            Sed lacinia dapibus nulla, eget scelerisque velit elementum id. Aenean ac nulla ut velit tincidunt
+            interdum nec ac massa. Aliquam diam nisl, efficitur sed ex sed, aliquet interdum magna. Proin libero
+            tellus, fringilla ac hendrerit eget, rutrum in lacus.</p>
+    </section>
+
+    <!----- Photo ----->
+    <section class="photo-full">
+        <img src="images/20200301_UUFA_023.jpg" alt="A map of where Unitarian Universalists practice in Athens, Ohio.">
+        <div class="caption">
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (Photo by Evann Figueroa)</h6>
+        </div>
+    </section>
+
+    <!----- Infographic ----->
+    <section class="section-photo">
+        <div class="infographic">
+            <div id='map'></div>
+        </div>
+        
+    </section>
+
+    <!----- Text ----->
+    <section class="section-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac pellentesque urna.
+            Suspendisse ut purus sit amet felis rutrum convallis. Suspendisse auctor eros cursus quam mattis
+            tempor. Cras faucibus, mi sed sodales rhoncus, ex turpis auctor metus, a iaculis dui est quis
+            tortor. Maecenas tempor lacus id fringilla vestibulum. Proin molestie vitae tellus sed imperdiet.
+            Donec convallis, velit sed tincidunt mollis, lorem ex ultricies nisi, ac suscipit ante mauris ut ex.
+            Sed lacinia dapibus nulla, eget scelerisque velit elementum id. Aenean ac nulla ut velit tincidunt
+            interdum nec ac massa. Aliquam diam nisl, efficitur sed ex sed, aliquet interdum magna. Proin libero
+            tellus, fringilla ac hendrerit eget, rutrum in lacus. Nullam turpis elit, sodales a ipsum aliquam,
+            auctor imperdiet eros. Nullam id rutrum quam. Nam varius nisi convallis erat finibus ullamcorper.
+            Duis sed diam ac nulla cursus mattis. Maecenas malesuada, leo eu commodo maximus, ante justo
+            ultrices enim, id sollicitudin dolor nunc quis nibh.</p>
+    </section>
+
+    <!----- Video ----->
+    <section class="section-video">
+        <video width="1920" height="1080" controls>
+            <source src="images/Barb_interview_v2.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!----- Photo ----->
+    <section class="section-photo group-photo">
+        <img class="vertical-photo" src="images/20200301_UUFA_008.jpg"
+            alt="A map of where Unitarian Universalists practice in Athens, Ohio.">
+        <img class="horizontal-photo" src="images/20200301_UUFA_023.jpg"
+            alt="A map of where Unitarian Universalists practice in Athens, Ohio.">
+    </section>
+
+    <!----- Text ----->
+    <section class="section-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac pellentesque urna.
+            Suspendisse ut purus sit amet felis rutrum convallis. Suspendisse auctor eros cursus quam mattis
+            tempor. Cras faucibus, mi sed sodales rhoncus, ex turpis auctor metus, a iaculis dui est quis
+            tortor. Maecenas tempor lacus id fringilla vestibulum. Proin molestie vitae tellus sed imperdiet.
+            Donec convallis, velit sed tincidunt mollis, lorem ex ultricies nisi, ac suscipit ante mauris ut ex.
+            Sed lacinia dapibus nulla, eget scelerisque velit elementum id.</p>
+    </section>
+
+    <!----- Text ----->
+    <section class="section-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac pellentesque urna.
+            Suspendisse ut purus sit amet felis rutrum convallis. Suspendisse auctor eros cursus quam mattis
+            tempor. Cras faucibus, mi sed sodales rhoncus, ex turpis auctor metus, a iaculis dui est quis
+            tortor. Maecenas tempor lacus id fringilla vestibulum. Proin molestie vitae tellus sed imperdiet.
+            Donec convallis, velit sed tincidunt mollis, lorem ex ultricies nisi, ac suscipit ante mauris ut ex.
+            Sed lacinia dapibus nulla, eget scelerisque velit elementum id.</p>
+    </section>
+
+    <!----- Next Story Selection ----->
+    <section class="section-end">
+        <h1><a href="#">Danny </a></h1>
+        <h2 id="slash"> | </h2>
+        <h1><a href="#"> Habiba</a></h1>
+    </section>
+
+    <!----- Footer ----->
+    <footer>
+        <h5>© Soul of Athens 2020</h5>
+        <h5><a href="#">Back to Top</a></h5>
+    </footer>
+
+
+
+    <!----- Script ----->
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () {
+            myFunction()
+        };
+        // Progress bar
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2FyYWhtZWxhcmFnbm8iLCJhIjoiY2pzeXhxbmw2MDFkeTN5bnZ4YmsyNHlxNCJ9.AwJE5-r4wY23--j6tuAq6Q'; // MAPBOX ACCESS TOKEN
+            var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/sarahmelaragno/ck8t69af803cc1ipfocm1cu4q', // SARAH'S STYLE ID
+              center: [-82.091636, 39.313208],
+              zoom: 11.22
+            });
+
+        
+            map.on('click', function(e) {
+            var features = map.queryRenderedFeatures(e.point, {
+            layers: ['all-protestantchristian-denomina', 'islam-habiba', 'interfaith', 'catholic-churches', 'buddhist-danny', 'jewish', 'non-denominational', 'barb-map-info'] 
+            });
+        
+            if (!features.length) {
+              return;
+            }
+            var feature = features[0];
+        
+            var popup = new mapboxgl.Popup({ offset: [0, -15] })
+            .setLngLat(feature.geometry.coordinates)
+            .setHTML('<h2>' + feature.properties.place_name + '</h2><h3>' + feature.properties.denomination + '</h3><p>' +feature.properties.address   + '</p>')
+            .addTo(map);
+            });
+    </script>
+
+</body>
+
+</html>
