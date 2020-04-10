@@ -36,8 +36,8 @@
         <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"> 
             <source src="video/parallax_video2.mp4" type="video/mp4">
         </video>-->
-        <div class="container-fluid h-100 more-padding-bold">
-            <div class="row d-flex h-100 align-items-center">
+        <div class="container-fluid xh-100 more-padding-bold">
+            <div class="row d-flex xh-100 align-items-center">
                 <div class="col-md-8 w-100 text-white">
                     <!-- TITLE FADING -->
                     <h1 class="w3-animate-fading1 font-weight-bold">BELIEFS </h1>
@@ -53,6 +53,22 @@
             <p><i class="w3-animate-fading5 arrow down"></i></p>
         </div>
     </header>
+
+    <!-- MAP and BAR CHART -->
+
+    <div class="wrapper bg-dark more-padding-bold">
+        <div class="row ">
+            <div class="col-6">
+                <div id="map">
+                </div>
+            </div>
+            <div class="col-6">
+                <canvas id="horizontalBar" style="max-width: 100%;"></canvas>
+            </div>
+        </div>
+    </div>
+    </div>
+
 
     <!-- DESCRIPTION -->
     <div class="wrapper bg-dark more-padding-bold">
@@ -140,34 +156,26 @@
                 </div>
             </div>
 
-            <!-- Top navbar -->
+            <!-- Top navbar 
 
             <div class="wrapper">
                 <div class="container">
-                    <div class="navbar">
 
-                        <!-- <a href="#news">About</a> -->
-                        <a href="#contact"><span class="more-padding" style="font-size:30px;cursor:pointer"
-                                onclick="openNav()">&#9776;</span></a>
+                    <div id="mySidenav" class="sidenav navba h5">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">Episode 01</a>
+                        <a href="#">Portland, OR</a>
+                        <a href="#">Rutland, OH</a>
+                        <a href="#">Detroit, MI</a>
+                        <a href="#">Athens, OH</a>
+                        <a href="#">Dayton, OH</a>
                     </div>
+
+                    <span class="more-padding" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
                 </div>
-            </div>
+            </div> -->
 
-
-
-            <!-- footer -->
-            <!-- <footer class="dark-footer"> 
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <p>Zul Tinarbuko © 2019</p>
-                    </div>
-                    <div class="col">
-                        <p class="float-right"><a href="#">Back to top</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer> -->
 
             <!-- javascript dependencies: first jQuery, then Popper.js, then Bootstrap JS -->
             <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
@@ -178,8 +186,16 @@
             <script src="js/jquery.easing.min.js"></script>
             <script src="js/scrolling.js"></script>
 
+            <!-- chart js -->
+            <script src='https://unpkg.com/chart.js/dist/Chart.min.js'></script>
+
+            <!-- Mapbox JS -->
+            <script src='https://unpkg.com/mapbox-gl/dist/mapbox-gl.js'></script>
+
+
             <!--custom JS-->
             <script>
+                // Fadding effect
                 var TxtRotate = function (el, toRotate, period) {
                     this.toRotate = toRotate;
                     this.el = el;
@@ -238,6 +254,79 @@
                     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
                     document.body.appendChild(css);
                 };
+
+                // side bar
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+
+                // MAP!!
+                // use YOUR mapbox account token
+                mapboxgl.accessToken =
+                    'pk.eyJ1Ijoiem91bG9yZDE4IiwiYSI6ImNrMXh5dWM0cTBoeGMzZG10Nnd1dmM1NGQifQ.cuioEBRujh4yp9iBeb6wQQ';
+
+                // new map
+                var map = new mapboxgl.Map({
+                    container: 'map', // container id
+                    style: 'mapbox://styles/zoulord18/ck1zrtc9jca9a1dpeya9cd4uu', // stylesheet location
+                    center: [-91.19, 39.75], //starting position [lng, lat]
+                    zoom: 3.55, // starting zoom
+                    hash: true // shows map zoom, center in url
+                });
+
+                // CHART!!
+                new Chart(document.getElementById("horizontalBar"), {
+                    "type": "horizontalBar",
+                    "data": {
+                        "labels": ['Methodist',
+                            'Baptist',
+                            'Christian',
+                            'Pentecostal',
+                            'Presbyterian',
+                            'Episcopal',
+                            'Evangelical',
+                            'Lutheran',
+                            'Church of God',
+                            'Non-Denominational Christian',
+                            'Catholic',
+                            'Interfaith',
+                            'Jewish',
+                            'Buddhist',
+                            'Islamic',
+                        ],
+                        "datasets": [{
+                            "label": "Religious and Spiritual Centers in Athens  ",
+                            "data": [5, 3, 3, 2, 2, 1, 1, 1, 1, 6, 2, 2, 2, 1, 1, ],
+                            "fill": false,
+                            "backgroundColor": ["rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
+                                "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
+                                "rgba(169, 169, 169,)",
+                                "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
+                                "rgba(169, 169, 169,)",
+                                "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
+                                "rgba(169, 169, 169,)",
+                                "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
+                                "rgba(169, 169, 169,)",
+                                "rgba(169, 169, 169,)"
+                            ],
+
+                        }]
+                    },
+                    "options": {
+                        "scales": {
+                            "xAxes": [{
+                                "ticks": {
+                                    "beginAtZero": true
+
+                                }
+                            }]
+                        }
+                    }
+                });
             </script>
 </body>
 

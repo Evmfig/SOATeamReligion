@@ -733,16 +733,17 @@ header .overlay {
 /*sidenav*/
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
+
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -888,7 +889,7 @@ i {
     padding: 25px;
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-top: -12rem;
+    margin-top: 5rem;
     margin-left: 2rem;
 }
 
@@ -960,4 +961,13 @@ i {
     font-size: 0px;
     line-height: 0px;
     margin: 0px 8px;
+}
+
+/* MAP */
+
+#map {
+    height: 450px;
+    width: 100%;
+    /* border-radius: 25px; */
+    /* border: 2px solid #ffc107; */
 }
