@@ -379,9 +379,9 @@ header .overlay {
 }
 
 .bkgd-image-5 {
-    background: url(../images/bgimg5.jpg);
+    background: url(../images/bgimg6.jpg);
     background-color: #444444;
-    height: 800px;
+    height: 1000px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -922,7 +922,7 @@ i {
     --lt-lt-yellow: #eeebdf;
     --magenta: #bb0a65;
     --main-green: #82941C;
-    --black: #151212;
+    --black: #020100;
 }
 
 .bg-dark {
