@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,700|EB+Garamond&display=swap"
         rel="stylesheet">
 
+     <!-- Mapbox CSS -->
+     <link href='https://www.unpkg.com/mapbox-gl/dist/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Font-awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
@@ -278,9 +280,29 @@
                     container: 'map', // container id
                     style: 'mapbox://styles/sarahmelaragno/ck8tcvqoe08vl1itbs6u621rl', // stylesheet location
                     center: [-82.092510, 39.312393], //starting position [lng, lat]
-                    zoom: 11.2, // starting zoom
+                    zoom: 10.95, // starting zoom
                     hash: true // shows map zoom, center in url
                 });
+
+                map.on('click', function(e) {
+                var features = map.queryRenderedFeatures(e.point, {
+                layers: ['all-protestantchristian-denomina', 'islam-habiba', 'interfaith', 'catholic-churches', 'buddhist-danny', 'jewish', 'non-denominational'] // replace this with the name of the layer
+                });
+
+                if (!features.length) {
+                return;
+                }
+                var feature = features[0];
+
+                var popup = new mapboxgl.Popup({ offset: [0, -100] })
+                .setLngLat(feature.geometry.coordinates)
+                .setHTML('<h2>' + feature.properties.place_name + '</h2><h3>' + feature.properties.denomination + '</h3><p>' +feature.properties.address   + '</p>')
+                .addTo(map);
+                });
+
+                // Add zoom and rotation controls to the map.
+                map.addControl(new mapboxgl.NavigationControl());
+
 
                 // CHART!!
                 new Chart(document.getElementById("horizontalBar"), {
