@@ -385,9 +385,9 @@
                 }
                 var feature = features[0];
 
-                var popup = new mapboxgl.Popup({ offset: [0, -100] })
+                var popup = new mapboxgl.Popup({ offset: [0, 0] })
                 .setLngLat(feature.geometry.coordinates)
-                .setHTML('<h2>' + feature.properties.place_name + '</h2><h3>' + feature.properties.denomination + '</h3><p>' +feature.properties.address   + '</p>')
+                .setHTML('<h3>' + feature.properties.place_name + '</h3><h4>' + feature.properties.denomination + '</h4><p>' +feature.properties.address   + '</p>')
                 .addTo(map);
                 });
 
