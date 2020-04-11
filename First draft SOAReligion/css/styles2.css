@@ -4,7 +4,7 @@ h6,
 .h5,
 .h6 {
 
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -21,7 +21,7 @@ h6 {
 h4,
 .h4 {
     font-size: 1rem;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-weight: 600;
     font-style: thin;
     letter-spacing: 1px;
@@ -35,7 +35,7 @@ h3,
 .h1,
 .h2,
 .h3 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 5rem;
@@ -171,6 +171,14 @@ header .overlay {
     padding: 5rem !important;
 }
 
+.more-padding-bold-no-top {    
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+    padding-bottom: 5rem !important;
+
+
+}
+
 .no-padding {
     padding: 0 !important;
 }
@@ -253,6 +261,7 @@ header .overlay {
     margin-top: -2rem;
 }
 
+
 .show-bkgd {
     border: #cccccc;
     background-color: #dddddd;
@@ -262,8 +271,22 @@ header .overlay {
     height: 100%;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
 .justify-content-center {
     justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .img-status {
@@ -982,4 +1005,30 @@ i {
 
 .mapboxgl-popup-content h2 {
     text-transform: capitalize;
+}
+
+#key-main-row {
+    display:flex;
+    flex-direction: row;
+}
+.key-name {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.key-circle {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-right: 0.3rem;
+}
+
+#buddhist-circle {
+    background-color: #9F4CAE;
+}
+
+#key-p {
+    max-width:;
 }
