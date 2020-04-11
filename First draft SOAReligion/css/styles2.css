@@ -248,7 +248,7 @@ header .overlay {
 }
 
 .margin-top {
-    margin-top: 1rem;
+    margin-top: 2rem;
 
 }
 
@@ -1010,12 +1010,21 @@ i {
 #key-main-row {
     display:flex;
     flex-direction: row;
+    padding: 20px;
 }
 .key-name {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
+}
+
+.key-row-bottom {
+    margin-top: 0.3rem;
+}
+
+.key-row-top {
+    margin-bottom: 0.3rem;
 }
 
 .key-circle {
@@ -1029,6 +1038,32 @@ i {
     background-color: #9F4CAE;
 }
 
+#catholic-circle {
+    background-color: #5047ae;
+}
+
+#interfaith-circle {
+    background-color: #5fbdce;
+}
+
+#islamic-circle {
+    background-color: #93c567;
+}
+
+#jewish-circle {
+    background-color: #f8d80d;
+}
+
+#nondenom-circle {
+    background-color: #ff7733;
+}
+
 #key-p {
-    max-width:;
+    line-height: 120%;
+    margin-left: 0.3rem;
+}
+
+#key-p a{
+    text-decoration: underline;
+    line-height: 155%;
 }
