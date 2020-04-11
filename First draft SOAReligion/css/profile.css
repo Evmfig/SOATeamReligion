@@ -116,6 +116,11 @@ h1 {
     font-weight: 800;
 }
 
+h2 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 200;
+}
+
 h3 {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
