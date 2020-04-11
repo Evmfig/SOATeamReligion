@@ -61,10 +61,12 @@
     <div class="wrapper bg-dark more-padding-bold">
         <div class="row ">
             <div class="col-6">
+                <h5 class="text-white">SUB HEADING</h5>
                 <div id="map">
                 </div>
             </div>
             <div class="col-6">
+                <h5 class="text-white">SUB HEADING</h5>
                 <canvas id="horizontalBar" style="max-width: 100%;"></canvas>
             </div>
         </div>
@@ -308,36 +310,40 @@
                 new Chart(document.getElementById("horizontalBar"), {
                     "type": "horizontalBar",
                     "data": {
-                        "labels": ['Methodist',
-                            'Baptist',
-                            'Christian',
-                            'Pentecostal',
-                            'Presbyterian',
-                            'Episcopal',
-                            'Evangelical',
-                            'Lutheran',
-                            'Church of God',
-                            'Non-Denominational Christian',
-                            'Catholic',
-                            'Interfaith',
-                            'Jewish',
-                            'Buddhist',
-                            'Islamic',
+                        "labels": [
+                            'BUDDHIST',
+                            'CATHOLIC',
+                            'INTERFAITH',
+                            'ISLAMIC',
+                            'NON-DENOM. CHRISTIAN',
+                            'BAPTIST',
+                            'CHURCH OF GOD',
+                            'EPISCOPAL',
+                            'EVANGELICAL',
+                            'LUTHERAN',
+                            'METHODIST',
+                            'PENTECOSTAL',
+                            'PRESBYTERIAN',
+                            'SEVENTH-DAY ADVENTIST',
                         ],
                         "datasets": [{
                             "label": "Religious and Spiritual Centers in Athens  ",
-                            "data": [5, 3, 3, 2, 2, 1, 1, 1, 1, 6, 2, 2, 2, 1, 1, ],
+                            "data": [1, 2, 2, 1, 2, 7, 3, 1, 1, 1, 1, 5, 2, 2, 1],
                             "fill": false,
-                            "backgroundColor": ["rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
-                                "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
-                                "rgba(169, 169, 169,)",
-                                "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
-                                "rgba(169, 169, 169,)",
-                                "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
-                                "rgba(169, 169, 169,)",
-                                "rgba(169, 169, 169,)", "rgba(169, 169, 169,)",
-                                "rgba(169, 169, 169,)",
-                                "rgba(169, 169, 169,)"
+                            "backgroundColor": [
+                                "#e2d165", 
+                                "#42b3ad",
+                                "#0289bb", 
+                                "#4c43b1",
+                                "#DD7B03",
+                                "#BC101C",
+                                "#EB1423",
+                                "#EF434F",
+                                "#F3727B",
+                                "#F7A1A7", 
+                                "#FAC7CA",
+                                "#FCDADC",
+                                "#FDE8E9",
                             ],
 
                         }]
