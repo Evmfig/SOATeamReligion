@@ -1003,9 +1003,20 @@ i {
     /* border: 2px solid #ffc107; */
 }
 
-.mapboxgl-popup-content h2 {
-    text-transform: capitalize;
+.mapboxgl-popup-content h3{
+    font-family: 'Barlow', sans-serif;
 }
+
+.mapboxgl-popup-content h4{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+
+.mapboxgl-popup-content p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+}
+
 
 #key-main-row {
     display:flex;
