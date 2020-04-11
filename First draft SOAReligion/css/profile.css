@@ -187,6 +187,39 @@ img {
     width: 30%;
 }
 
+.flex-row {
+    display:flex;
+    flex-direction: row;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+#map {
+    height: 80%;
+    width: 100%;
+}
+
+.mapboxgl-map {
+    overflow: visible;
+}
+
+.mapboxgl-popup-content h3{
+    font-family: 'Barlow', sans-serif;
+}
+
+.mapboxgl-popup-content h4{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+
+.mapboxgl-popup-content p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+}
+
 /* ---------- MEDIA QUERIES ---------- */
 @media screen and (max-width: 800px) {}
 
