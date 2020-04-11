@@ -163,6 +163,8 @@ header .overlay {
     margin-left: auto;
 }
 
+
+
 .more-padding {
     padding: 3rem !important;
 }
@@ -261,6 +263,9 @@ header .overlay {
     margin-top: -2rem;
 }
 
+.margin-left {
+    margin-left:;
+}
 
 .show-bkgd {
     border: #cccccc;
@@ -995,6 +1000,11 @@ i {
 }
 
 /* MAP */
+
+.map-title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
 
 #map {
     height: 450px;
