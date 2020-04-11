@@ -21,13 +21,8 @@ font-family: 'EB Garamond', serif; */
 
 /* ---------- SECTION STYLING ---------- */
 /* Section Styling */
-.top-nav {
-    padding: 50px;
-}
-
 .section-title {
     position: relative;
-    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +36,7 @@ font-family: 'EB Garamond', serif; */
 
 #slash {
     font-size: 10em;
-    font-weight: 100;
+    font-weight: lighter;
     position: relative;
     padding: 10px;
 }
@@ -161,7 +156,7 @@ a:hover {
 }
 
 a:active {
-    text-decoration: none;
+    text-decoration: underline;
     color: #D9D9D9;
 }
 
@@ -184,7 +179,7 @@ img {
 }
 
 .portrait {
-    width: 30%;
+    width: 40%;
     border-radius: 50%;
 }
 
