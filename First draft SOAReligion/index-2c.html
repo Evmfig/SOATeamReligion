@@ -72,41 +72,98 @@
             </div>
         </div>
         <div class="row flex-row justify-content-center margin-top">
-            <div class="col-6 border border-white text-white">
+            <div class="col-7 border border-white text-white">
                <div class="row" id="key-main-row">
-                   <div class="col-2">
+                   
+                    <div class="col-2">
                        <div class="row flex-row align-items-center key-row-top">
                            <div class="key-circle" id="buddhist-circle"></div>
-                        <div class="key-name">Buddhist</div>
+                        <div class="key-main-name">Buddhist</div>
                        </div>
 
                        <div class="row flex-row align-items-center">
                             <div class="key-circle" id="catholic-circle" ></div>
-                        <div class="key-name">Catholic</div>
+                        <div class="key-main-name">Catholic</div>
                         </div>
 
                         <div class="row flex-row align-items-center key-row-bottom">
                             <div class="key-circle" id="interfaith-circle"></div>
-                         <div class="key-name">Interfaith</div>
+                         <div class="key-main-name">Interfaith</div>
                         </div>
                    </div>
 
                    <div class="col-3">
-                    <div class="row flex-row align-items-center key-row-top">
-                        <div class="key-circle" id="islamic-circle"></div>
-                     <div class="key-name">Islamic</div>
+                        <div class="row flex-row align-items-center key-row-top">
+                            <div class="key-circle" id="islamic-circle"></div>
+                        <div class="key-main-name">Islamic</div>
+                        </div>
+
+                        <div class="row flex-row align-items-center">
+                            <div class="key-circle" id="jewish-circle" ></div>
+                        <div class="key-main-name">Jewish</div>
+                        </div>
+
+                        <div class="row flex-row align-items-center key-row-bottom">
+                            <div class="key-circle" id="nondenom-circle"></div>
+                        <div class="key-main-name">Non-Denom. Christian</div>
+                        </div>
                     </div>
+               
+                    <div class="col-7 flex-col">
+                        <div class="row key-main-name">Protestant</div>
+                        <div class="row flex-row" id="indent">
+                            <div class="col-4">
+                                <div class="row flex-row align-items-center key-row-top">
+                                    <div class="key-circle" id="baptist-circle"></div>
+                                 <div class="key-protestant-name">Baptist</div>
+                                </div>
+         
+                                <div class="row flex-row align-items-center">
+                                     <div class="key-circle" id="churchofgod-circle" ></div>
+                                 <div class="key-protestant-name">Church of God</div>
+                                 </div>
+         
+                                 <div class="row flex-row align-items-center key-row-bottom">
+                                     <div class="key-circle" id="episcopal-circle"></div>
+                                  <div class="key-protestant-name">Episcopal</div>
+                                 </div>
+                            </div>
 
-                    <div class="row flex-row align-items-center">
-                         <div class="key-circle" id="jewish-circle" ></div>
-                     <div class="key-name">Jewish</div>
-                     </div>
+                            <div class="col-3">
+                                <div class="row flex-row align-items-center key-row-top">
+                                    <div class="key-circle" id="evangelical-circle"></div>
+                                 <div class="key-protestant-name">Evangelical</div>
+                                </div>
+         
+                                <div class="row flex-row align-items-center">
+                                     <div class="key-circle" id="lutheran-circle" ></div>
+                                 <div class="key-protestant-name">Lutheran</div>
+                                 </div>
+         
+                                 <div class="row flex-row align-items-center key-row-bottom">
+                                     <div class="key-circle" id="methodist-circle"></div>
+                                  <div class="key-protestant-name">Methodist</div>
+                                 </div>
+                            </div>
 
-                     <div class="row flex-row align-items-center key-row-bottom">
-                         <div class="key-circle" id="nondenom-circle"></div>
-                      <div class="key-name">Non-Denom. Christian</div>
-                     </div>
-                </div>
+                            <div class="col-5">
+                                <div class="row flex-row align-items-center key-row-top">
+                                    <div class="key-circle" id="pentecostal-circle"></div>
+                                 <div class="key-protestant-name">Pentecostal</div>
+                                </div>
+         
+                                <div class="row flex-row align-items-center">
+                                     <div class="key-circle" id="presbyterian-circle" ></div>
+                                 <div class="key-protestant-name">Presbyterian</div>
+                                 </div>
+         
+                                 <div class="row flex-row align-items-center key-row-bottom">
+                                     <div class="key-circle" id="SDA-circle"></div>
+                                  <div class="key-protestant-name">Seventh-Day Adventist</div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
                </div>
            </div>
            <div class="col-2">
@@ -313,8 +370,8 @@
                 var map = new mapboxgl.Map({
                     container: 'map', // container id
                     style: 'mapbox://styles/sarahmelaragno/ck8vyjhio1ytg1inqvnpqhlar', // stylesheet location
-                    center: [-82.092510, 39.312393], //starting position [lng, lat]
-                    zoom: 10.95, // starting zoom
+                    center: [-82.0856, 39.3119], //starting position [lng, lat]
+                    zoom: 10.72, // starting zoom
                     hash: true // shows map zoom, center in url
                 });
 
@@ -337,6 +394,7 @@
                 // Add zoom and rotation controls to the map.
                 map.addControl(new mapboxgl.NavigationControl());
 
+                
 
                 // CHART!!
                 new Chart(document.getElementById("horizontalBar"), {

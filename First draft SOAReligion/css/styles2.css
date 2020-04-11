@@ -1012,10 +1012,17 @@ i {
     flex-direction: row;
     padding: 20px;
 }
-.key-name {
+.key-main-name {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.key-protestant-name {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 300;
     font-size: 14px;
 }
 
@@ -1025,6 +1032,10 @@ i {
 
 .key-row-top {
     margin-bottom: 0.3rem;
+}
+
+#indent {
+    margin-left: 5px;
 }
 
 .key-circle {
@@ -1057,6 +1068,43 @@ i {
 #nondenom-circle {
     background-color: #ff7733;
 }
+
+#baptist-circle {
+    background-color: #8D0C15;
+}
+
+#churchofgod-circle {
+    background-color: #BC101C;
+}
+
+#episcopal-circle {
+    background-color: #EB1423;
+}
+
+#evangelical-circle {
+    background-color: #EF434F;
+}
+
+#lutheran-circle {
+    background-color: #F3727B;
+}
+
+#methodist-circle {
+    background-color: #F7A1A7;
+}
+
+#pentecostal-circle {
+    background-color: #fac7ca;
+}
+
+#presbyterian-circle {
+    background-color: #FCDADC;
+}
+
+#SDA-circle {
+    background-color: #fde8e9;
+}
+
 
 #key-p {
     line-height: 120%;
