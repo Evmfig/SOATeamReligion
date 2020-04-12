@@ -13,10 +13,12 @@
     <!-- google fonts stylesheet -->
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,700|EB+Garamond&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-     <!-- Mapbox CSS -->
-     <link href='https://www.unpkg.com/mapbox-gl/dist/mapbox-gl.css' rel='stylesheet' />
+    <!-- Mapbox CSS -->
+    <link href='https://www.unpkg.com/mapbox-gl/dist/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Font-awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
@@ -47,7 +49,7 @@
                     <h1 class="w3-animate-fading2 font-weight-bold">RELIGION </h1>
                     <h1 class="w3-animate-fading3 font-weight-bold">FAITH </h1>
                     <h1 class="w3-animate-fading4 font-weight-bold">SPIRITUALITY</h1>
-                    <h1 class="font-weight-bold"><span class="font-weight-normal">
+                    <h1 class="font-weight-bold"><span class="font-weight-lighter">
                             IN</span>
                         ATHENS</h1>
                 </div>
@@ -57,8 +59,19 @@
         </div>
     </header>
 
-    <!-- MAP and BAR CHART -->
+    <!-- DESCRIPTION -->
+    <div class="wrapper bg-dark more-padding-bold">
+        <div class="row">
+            <div class="col-lg-12 w-100 ">
+                <h5 class="text-white">SUB HEADING</h5>
+                <p class="margin-top display-5 text-white">Athens is a religiously diverse community settled in the
+                    predominantly Christian hills of Appalachia. While many religions are represented, not all religious
+                    groups have the same access to resources needed to practice together.</p>
+            </div>
+        </div>
+    </div>
 
+    <!-- MAP and BAR CHART -->
     <div class="wrapper bg-dark more-padding-bold">
         <div class="row ">
             <div class="col-6">
@@ -73,127 +86,112 @@
         </div>
         <div class="row flex-row justify-content-center margin-top">
             <div class="col-7 border border-white text-white">
-               <div class="row" id="key-main-row">
-                   
-                    <div class="col-2">
-                       <div class="row flex-row align-items-center key-row-top">
-                           <div class="key-circle" id="buddhist-circle"></div>
-                        <div class="key-main-name">Buddhist</div>
-                       </div>
+                <div class="row" id="key-main-row">
 
-                       <div class="row flex-row align-items-center">
-                            <div class="key-circle" id="catholic-circle" ></div>
-                        <div class="key-main-name">Catholic</div>
+                    <div class="col-2">
+                        <div class="row flex-row align-items-center key-row-top">
+                            <div class="key-circle" id="buddhist-circle"></div>
+                            <div class="key-main-name">Buddhist</div>
+                        </div>
+
+                        <div class="row flex-row align-items-center">
+                            <div class="key-circle" id="catholic-circle"></div>
+                            <div class="key-main-name">Catholic</div>
                         </div>
 
                         <div class="row flex-row align-items-center key-row-bottom">
                             <div class="key-circle" id="interfaith-circle"></div>
-                         <div class="key-main-name">Interfaith</div>
+                            <div class="key-main-name">Interfaith</div>
                         </div>
-                   </div>
+                    </div>
 
-                   <div class="col-3">
+                    <div class="col-3">
                         <div class="row flex-row align-items-center key-row-top">
                             <div class="key-circle" id="islamic-circle"></div>
-                        <div class="key-main-name">Islamic</div>
+                            <div class="key-main-name">Islamic</div>
                         </div>
 
                         <div class="row flex-row align-items-center">
-                            <div class="key-circle" id="jewish-circle" ></div>
-                        <div class="key-main-name">Jewish</div>
+                            <div class="key-circle" id="jewish-circle"></div>
+                            <div class="key-main-name">Jewish</div>
                         </div>
 
                         <div class="row flex-row align-items-center key-row-bottom">
                             <div class="key-circle" id="nondenom-circle"></div>
-                        <div class="key-main-name">Non-Denom. Christian</div>
+                            <div class="key-main-name">Non-Denom. Christian</div>
                         </div>
                     </div>
-               
+
                     <div class="col-7 flex-col">
                         <div class="row key-main-name">Protestant</div>
                         <div class="row flex-row" id="indent">
                             <div class="col-4">
                                 <div class="row flex-row align-items-center key-row-top">
                                     <div class="key-circle" id="baptist-circle"></div>
-                                 <div class="key-protestant-name">Baptist</div>
+                                    <div class="key-protestant-name">Baptist</div>
                                 </div>
-         
+
                                 <div class="row flex-row align-items-center">
-                                     <div class="key-circle" id="churchofgod-circle" ></div>
-                                 <div class="key-protestant-name">Church of God</div>
-                                 </div>
-         
-                                 <div class="row flex-row align-items-center key-row-bottom">
-                                     <div class="key-circle" id="episcopal-circle"></div>
-                                  <div class="key-protestant-name">Episcopal</div>
-                                 </div>
+                                    <div class="key-circle" id="churchofgod-circle"></div>
+                                    <div class="key-protestant-name">Church of God</div>
+                                </div>
+
+                                <div class="row flex-row align-items-center key-row-bottom">
+                                    <div class="key-circle" id="episcopal-circle"></div>
+                                    <div class="key-protestant-name">Episcopal</div>
+                                </div>
                             </div>
 
                             <div class="col-3">
                                 <div class="row flex-row align-items-center key-row-top">
                                     <div class="key-circle" id="evangelical-circle"></div>
-                                 <div class="key-protestant-name">Evangelical</div>
+                                    <div class="key-protestant-name">Evangelical</div>
                                 </div>
-         
+
                                 <div class="row flex-row align-items-center">
-                                     <div class="key-circle" id="lutheran-circle" ></div>
-                                 <div class="key-protestant-name">Lutheran</div>
-                                 </div>
-         
-                                 <div class="row flex-row align-items-center key-row-bottom">
-                                     <div class="key-circle" id="methodist-circle"></div>
-                                  <div class="key-protestant-name">Methodist</div>
-                                 </div>
+                                    <div class="key-circle" id="lutheran-circle"></div>
+                                    <div class="key-protestant-name">Lutheran</div>
+                                </div>
+
+                                <div class="row flex-row align-items-center key-row-bottom">
+                                    <div class="key-circle" id="methodist-circle"></div>
+                                    <div class="key-protestant-name">Methodist</div>
+                                </div>
                             </div>
 
                             <div class="col-5">
                                 <div class="row flex-row align-items-center key-row-top">
                                     <div class="key-circle" id="pentecostal-circle"></div>
-                                 <div class="key-protestant-name">Pentecostal</div>
+                                    <div class="key-protestant-name">Pentecostal</div>
                                 </div>
-         
+
                                 <div class="row flex-row align-items-center">
-                                     <div class="key-circle" id="presbyterian-circle" ></div>
-                                 <div class="key-protestant-name">Presbyterian</div>
-                                 </div>
-         
-                                 <div class="row flex-row align-items-center key-row-bottom">
-                                     <div class="key-circle" id="SDA-circle"></div>
-                                  <div class="key-protestant-name">Seventh-Day Adventist</div>
-                                 </div>
+                                    <div class="key-circle" id="presbyterian-circle"></div>
+                                    <div class="key-protestant-name">Presbyterian</div>
+                                </div>
+
+                                <div class="row flex-row align-items-center key-row-bottom">
+                                    <div class="key-circle" id="SDA-circle"></div>
+                                    <div class="key-protestant-name">Seventh-Day Adventist</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-               </div>
-           </div>
-           <div class="col-2">
-               <p class="text-white text-align-right" id="key-p">*Religions listed include only those with at least one formally established
-                   practice/worship location within Athens city limits listed online at:
-                   <br>
-                   <a href="https://www.ohio.edu/student-affairs/students/places-worship  ">ohio.edu</a>
-                   |
-                   <a href="https://athensohio.com/category/community/religious-centers/  ">athensohio.com</a>
-                   |
-                   <a href="https://www.churchfinder.com/churches/oh/athens">churchfinder.com</a>
-               </p>
-           </div>
-
-       </div>
-    </div>
-
-
-
-
-    <!-- DESCRIPTION -->
-    <div class="wrapper bg-dark more-padding-bold">
-        <div class="row">
-            <div class="col-lg-12 w-100 ">
-                <h5 class="text-white">SUB HEADING</h5>
-                <p class="margin-top display-5 text-white">“Athens is a religiously diverse community settled in the
-                    predominantly Christian hills of Appalachia. While many religions are represented, not all religious
-                    groups have the same access to resources needed to practice together".</p>
-
+                </div>
             </div>
+            <div class="col-2">
+                <p class="text-white text-align-right" id="key-p">*Religions listed include only those with at least one
+                    formally established
+                    practice/worship location within Athens city limits listed online at:
+                    <br>
+                    <a href="https://www.ohio.edu/student-affairs/students/places-worship  ">ohio.edu</a>
+                    |
+                    <a href="https://athensohio.com/category/community/religious-centers/  ">athensohio.com</a>
+                    |
+                    <a href="https://www.churchfinder.com/churches/oh/athens">churchfinder.com</a>
+                </p>
+            </div>
+
         </div>
     </div>
 
@@ -213,43 +211,35 @@
         <div class="row text-white">
             <div class="col-md-4 bkgd-image-1 hover-profile1">
                 <div class="container">
-
-                    <a href="profile.html" class="btn btn-primary-profile button1 h4" role="button"
+                    <a href="profile-Barb.html" class="btn btn-primary-profile button1 h4" role="button"
                         aria-pressed="true"><span>BARB</span></a>
-
                 </div>
                 <div class="overlay-profile1">
                     <!-- <i class="fas fa-star-and-crescent margin-center"></i> -->
                     <!-- <h1 class="margin-center2">Islam</h1> -->
-                    <p class="margin-center3 display-6 centered">“This is where
-                        I find my
-                        spiritual home”</p>
+                    <p class="margin-center3 display-6 centered">“This is where I find my spiritual home.”</p>
                 </div>
             </div>
 
             <div class="col-md-4 bkgd-image-2 hover-profile2">
-                <a href="http://capstone.ouviscom.com/zt421918/First%20draft%20SOAReligion/profile.html"
-                    class="btn button2 btn-primary-profile h4" role="button" aria-pressed="true"><span>DANNY</span></a>
-
-
+                <a href="profile-Danny.html" class="btn button2 btn-primary-profile h4" role="button"
+                    aria-pressed="true"><span>DANNY</span></a>
                 <div class="overlay-profile2">
                     <!-- <i class="fas fa-cross margin-center"></i> -->
                     <!-- <h1 class="margin-center2">Christian</h1> -->
                     <p class="margin-center3 display-6 centered">“It’s really more like a self-growth thing that
-                        at some point
-                        turned spiritual.”</p>
+                        at some point turned spiritual.”</p>
                 </div>
-
             </div>
 
             <div class="col-md-4 bkgd-image-3 hover-profile3">
-                <a href="http://capstone.ouviscom.com/zt421918/First%20draft%20SOAReligion/profile.html"
-                    class="btn button3 btn-primary-profile h4" role="button" aria-pressed="true"><span>HABIBA</span></a>
+                <a href="profile-Habiba.html" class="btn button3 btn-primary-profile h4" role="button"
+                    aria-pressed="true"><span>HABIBA</span></a>
                 <div class="overlay-profile3">
                     <!-- <i class="fas fa-star-and-crescent margin-center"></i> -->
                     <!-- <h1 class="margin-center2">Paganism</h1> -->
                     <p class="margin-center3 display-6 centered">“I feel like this university is a bubble and I want to
-                        break this bubble ”</p>
+                        break this bubble.”</p>
                 </div>
             </div>
 
@@ -375,26 +365,31 @@
                     hash: true // shows map zoom, center in url
                 });
 
-                map.on('click', function(e) {
-                var features = map.queryRenderedFeatures(e.point, {
-                layers: ['all-protestantchristian-denomina', 'islam-habiba', 'interfaith', 'catholic-churches', 'buddhist-danny', 'jewish', 'non-denominational'] // replace this with the name of the layer
-                });
+                map.on('click', function (e) {
+                    var features = map.queryRenderedFeatures(e.point, {
+                        layers: ['all-protestantchristian-denomina', 'islam-habiba', 'interfaith',
+                            'catholic-churches', 'buddhist-danny', 'jewish', 'non-denominational'
+                        ] // replace this with the name of the layer
+                    });
 
-                if (!features.length) {
-                return;
-                }
-                var feature = features[0];
+                    if (!features.length) {
+                        return;
+                    }
+                    var feature = features[0];
 
-                var popup = new mapboxgl.Popup({ offset: [0, 0] })
-                .setLngLat(feature.geometry.coordinates)
-                .setHTML('<h3>' + feature.properties.place_name + '</h3><h4>' + feature.properties.denomination + '</h4><p>' +feature.properties.address   + '</p>')
-                .addTo(map);
+                    var popup = new mapboxgl.Popup({
+                            offset: [0, 0]
+                        })
+                        .setLngLat(feature.geometry.coordinates)
+                        .setHTML('<h3>' + feature.properties.place_name + '</h3><h4>' + feature.properties
+                            .denomination + '</h4><p>' + feature.properties.address + '</p>')
+                        .addTo(map);
                 });
 
                 // Add zoom and rotation controls to the map.
                 map.addControl(new mapboxgl.NavigationControl());
 
-                
+
 
                 // CHART!!
                 new Chart(document.getElementById("horizontalBar"), {
@@ -419,19 +414,19 @@
                         ],
                         "datasets": [{
                             "label": "Religious and Spiritual Centers in Athens  ",
-                            "data": [1, 2, 2, 1, 2, 7, 3, 1, 1, 1, 1, 5, 2, 2, 1,],
+                            "data": [1, 2, 2, 1, 2, 7, 3, 1, 1, 1, 1, 5, 2, 2, 1, ],
                             "fill": false,
                             "backgroundColor": [
-                                "#9f4cae", 
+                                "#9f4cae",
                                 "#5047ae",
-                                "#5fbdce", 
+                                "#5fbdce",
                                 "#93c567",
                                 "#f8d80d",
                                 "#ff7733",
                                 "#8d0c15",
                                 "#bc101c",
                                 "#EB1423",
-                                "#EF434F", 
+                                "#EF434F",
                                 "#F3727B",
                                 "#F7A1A7",
                                 "#fac7ca",
