@@ -374,7 +374,7 @@ header .overlay {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: absolute;
     /* opacity: 0.75; */
 
 }
@@ -386,7 +386,7 @@ header .overlay {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: absolute;
     /* opacity: 0.75; */
 
 }
