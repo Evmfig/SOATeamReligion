@@ -10,9 +10,16 @@
     <!----- Google Fonts ----->
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:800|EB+Garamond&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!----- Bootstrap ----->
     <link href='https://unpkg.com/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' />
+
+
+    <!-- Mapbox CSS -->
+    <link href='https://www.unpkg.com/mapbox-gl/dist/mapbox-gl.css' rel='stylesheet' />
+
+
 
     <!----- External CSS ----->
     <link rel="stylesheet" href="css/profile.css">
@@ -128,18 +135,32 @@
             <p>Source: https://thebuddhistcentre.com/text/four-noble-truths</p>
         </div>
 
-        <!----- Where He Practices Text ----->
-        <div class="row">
-            <div id="map" class="col"></div>
+        <!----- Where She Practices Text ----->
+        <div class="row flex-row map-row">
+            <div class="col-6 align-items-center flex-col">
+
+                <div id="map"></div>
+
+                <div class="row map-key">
+                    <div class="col-4 flex-row">
+                        <img src="images/BH-map-icon.svg" alt="Danny Yahini's map icon">
+                        <div class="map-key-text">Danny Yahini’s main  location for spiritual practice.</div>
+                    </div>
+                    <div class="col-5 flex-row">
+                        <div class="map-key-circle" id="All spiritual centers map icon" ></div>
+                        <div class="map-key-text">Other spiritual centers in Athens.</div>
+                    </div>
+                </div>
+
+            </div>
             <div class="col section-text">
                 <h5>WHERE HE PRACTICES: ATHENS KARMA THEGSUM CHÖLING (KTC)</h5>
-                <p>Yahini describes the Athens KTC as a very diverse group of open-minded people. While some members are
-                    practicing Tibetan Buddhists, other members are more interested in non-religious spiritual growth.
-                    Almost all members hail from outside of Athens, and even a few from outside of the United States.
-                    Some members are shy, while others are more outgoing. Yahini says the group welcomes everyone and
-                    all ideas, which makes the Sangha stronger as a whole.</p>
+                <p>Yahini describes the Athens KTC as a very diverse group of open-minded people. While some members are practicing Tibetan Buddhists, other members are more interested in non-religious spiritual growth. Almost all members hail from outside of Athens, and even a few from outside of the United States. Some members are shy, while others are more outgoing. Yahini says the group welcomes everyone and all ideas, which makes the Sangha stronger as a whole.</p>
+                
             </div>
         </div>
+
+
     </section>
 
     <!----- Full Photo ----->

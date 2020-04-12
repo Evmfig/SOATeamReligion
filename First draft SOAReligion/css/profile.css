@@ -212,9 +212,13 @@ img {
 } 
 
 #map {
-    height: 80%;
+    height: 370px;
     width: 100%;
     border: 4px solid #F2B646;
+}
+
+.map-row {
+    margin-bottom: 2.5rem;
 }
 
 .mapboxgl-canvas {
