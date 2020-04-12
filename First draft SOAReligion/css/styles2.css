@@ -173,7 +173,7 @@ header .overlay {
     padding: 5rem !important;
 }
 
-.more-padding-bold-no-top {    
+.more-padding-bold-no-top {
     padding-left: 5rem !important;
     padding-right: 5rem !important;
     padding-bottom: 5rem !important;
@@ -264,7 +264,7 @@ header .overlay {
 }
 
 .margin-left {
-    margin-left:;
+    margin-left: ;
 }
 
 .show-bkgd {
@@ -277,7 +277,7 @@ header .overlay {
 }
 
 .align-items-center {
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
@@ -641,7 +641,7 @@ header .overlay {
     cursor: pointer;
     margin: 5px;
     z-index: 9999;
-    margin-top: 30rem;
+    margin-top: 2rem;
     margin-left: 3rem;
 }
 
@@ -689,7 +689,7 @@ header .overlay {
     cursor: pointer;
     margin: 5px;
     z-index: 9999;
-    margin-top: 30rem;
+    margin-top: 0rem;
     margin-left: 3rem;
 }
 
@@ -735,7 +735,7 @@ header .overlay {
     cursor: pointer;
     margin: 5px;
     z-index: 9999;
-    margin-top: 30rem;
+    margin-top: 0rem;
     margin-left: 3rem;
 }
 
@@ -1014,7 +1014,7 @@ i {
     width: 100%;
     /* border-radius: 25px; */
     /* border: 2px solid #ffc107; */
-    
+
 
 }
 
@@ -1024,18 +1024,18 @@ i {
     padding: 15px;
 }
 
-.mapboxgl-popup-content h3{
+.mapboxgl-popup-content h3 {
     font-family: 'Barlow', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-.mapboxgl-popup-content h4{
+.mapboxgl-popup-content h4 {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
 }
 
-.mapboxgl-popup-content p{
+.mapboxgl-popup-content p {
     font-family: 'Barlow', sans-serif;
     font-size: 15px;
 }
@@ -1046,10 +1046,11 @@ i {
 }
 
 #key-main-row {
-    display:flex;
+    display: flex;
     flex-direction: row;
     padding: 20px;
 }
+
 .key-main-name {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
@@ -1149,7 +1150,7 @@ i {
     margin-left: 0.3rem;
 }
 
-#key-p a{
+#key-p a {
     text-decoration: underline;
     line-height: 155%;
 }
