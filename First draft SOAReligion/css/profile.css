@@ -74,6 +74,7 @@ font-family: 'EB Garamond', serif; */
 .caption {
     position: relative;
     padding: 10px;
+    
 
 }
 
@@ -205,8 +206,17 @@ p {
     line-height: 1.2rem;
 }
 
+ol p {
+    margin-top: 1rem;
+    color:#818282;
+    
+
+}
+
+
 li {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
 }
 
 /* ---------- ASSET STYLING ---------- */
@@ -288,6 +298,11 @@ img {
     text-align: right;
 }
 
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
 .margin-top {
     margin-top: 5rem;
 }
@@ -301,6 +316,9 @@ img {
     margin-bottom: 2rem;
 }
 
+.choose-story {
+    margin-top: 10rem;
+}
 
 #map {
     height: 370px;
