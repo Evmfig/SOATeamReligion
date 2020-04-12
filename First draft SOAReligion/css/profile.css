@@ -204,7 +204,8 @@ img {
 }
 
 .portrait {
-    width: 40%;
+    width: 70%;
+    height: 70%;
     border-radius: 50%;
 }
 
@@ -246,6 +247,12 @@ img {
 .margin-top-small {
     margin-top:2rem;
 }
+
+.margin-top-bottom {
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
 
 #map {
     height: 370px;
