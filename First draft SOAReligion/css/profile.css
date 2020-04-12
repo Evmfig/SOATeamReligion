@@ -47,7 +47,7 @@ font-family: 'EB Garamond', serif; */
     font-weight: 100;
     position: relative;
     padding: 10px;
-    color: lightgray;
+    color: darkgray;
 }
 
 #practicing {
@@ -74,7 +74,8 @@ font-family: 'EB Garamond', serif; */
 .caption {
     position: relative;
     padding: 10px;
-    
+    margin-left: 10px;
+    color: darkgray;
 
 }
 
@@ -180,7 +181,7 @@ h2 {
 
 h3 {
     font-family: 'Barlow', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     
 }
 
