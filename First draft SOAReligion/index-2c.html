@@ -72,7 +72,7 @@
     <div class="wrapper bg-dark more-padding-bold-no-top">
         <div class="row flex-row justify-content-center">
             <div class="col-5">
-                <p class="text-white map-title">LOCATIONS OF RELIGIOUS SPIRITUAL CENTERS IN ATHENS</h6>
+                <p class="text-white map-title">LOCATIONS OF SPIRITUAL CENTERS IN ATHENS</h6>
                 <div id="map">
                 </div>
             </div>
@@ -398,8 +398,13 @@
                 // Add zoom and rotation controls to the map.
                 map.addControl(new mapboxgl.NavigationControl());
 
+                var bounds = [
+                [-82.284, 39.149 ], // [west, south]
+                [-81.254, 39.450]  // [east, north]
+                ];
+                // Set the map's max bounds.
+                map.setMaxBounds(bounds);   
                 
-
                 // CHART!!
                 new Chart(document.getElementById("horizontalBar"), {
                     "type": "horizontalBar",

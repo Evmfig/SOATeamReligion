@@ -1004,6 +1004,7 @@ i {
 .map-title {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
+    text-align: center;
 }
 
 #map {
@@ -1011,6 +1012,8 @@ i {
     width: 100%;
     /* border-radius: 25px; */
     /* border: 2px solid #ffc107; */
+    
+
 }
 
 .mapboxgl-popup-content h3{

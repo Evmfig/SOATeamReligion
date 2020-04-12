@@ -171,7 +171,7 @@
     </section>
 
     <!----- Double Photo ----->
-    <section class="container-fluid">
+    <section class="container-fluid margin-top">
         <div class="row">
             <!----- Photo 1 ----->
             <div class="column">
@@ -209,7 +209,7 @@
     <section class="container">
         <div class="row">
             <div class="col section-text">
-                <h5>Strength in Community</h5>
+                <h5>STRENGTH IN COMMUNITY</h5>
                 <p>The UUFA hosts a weekly service every Sunday morning, where members come together to create a
                     welcoming environment. They light a challis and in every service devote time to allowing members to
                     come up to a podium to briefly talk about a joy or concern that may be weighing on them.</p>
@@ -249,7 +249,7 @@
     <!----- Fighting For Social Justice Text ----->
     <section class="container">
         <div class="section-text">
-            <h5>Fighting for Social Justice</h5>
+            <h5>FIGHTING FOR SOCIAL JUSTICE</h5>
             <p>Unitarian Universalist congregations are few and far between in the Midwest. For Southeast Ohio, the UUFA
                 provides a liberal and progressive voice in the community.</p>
             <p>“We do sort of step up and take a lot of leadership with regard to social justice issues in the
@@ -382,7 +382,13 @@
                 // Add zoom and rotation controls to the map.
                 map.addControl(new mapboxgl.NavigationControl());
         
-
+                var bounds = [
+                [-82.284, 39.149 ], // [west, south]
+                [-81.8231, 39.450]  // [east, north]
+                ];
+                // Set the map's max bounds.
+                map.setMaxBounds(bounds);   
+                
         
     </script>
 </body>
