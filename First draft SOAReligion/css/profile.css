@@ -130,11 +130,15 @@ h3 {
 h5 {
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
+    font-size: 1.2rem;
+
 }
 
 h4,
 h6 {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 p {
@@ -210,6 +214,10 @@ img {
 .margin-top{
     margin-top: 5rem;
 } 
+
+.margin-top-small {
+    margin-top:2rem;
+}
 
 #map {
     height: 370px;
