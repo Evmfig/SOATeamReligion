@@ -29,23 +29,35 @@ font-family: 'EB Garamond', serif; */
 }
 
 #name {
-    font-size: 6em;
+    font-size: 4.5em;
     position: relative;
-    padding: 10px;
+    padding: 0px;
+
 }
 
 #slash {
     font-size: 10em;
     font-weight: lighter;
     position: relative;
+    padding: 0px;
+}
+
+#slash2 {
+    font-size: 8em;
+    font-weight: 100;
+    position: relative;
     padding: 10px;
+    color: lightgray;
 }
 
 #practicing {
+    font-family: 'EB Garamond', serif;
     font-weight: 600;
     font-style: italic;
+    font-size: 1.6rem;
     position: relative;
-    padding: 10px;
+    padding: 0px;
+    line-height: 1.5rem;
 }
 
 .section-text {
@@ -62,6 +74,7 @@ font-family: 'EB Garamond', serif; */
 .caption {
     position: relative;
     padding: 10px;
+
 }
 
 .section-end {
@@ -144,11 +157,14 @@ h3 {
 h5 {
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
+    font-size: 1.2rem;
+
 }
 
-h4,
 h6 {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 p {
@@ -199,6 +215,8 @@ img {
 }
 
 .portrait {
+    width: 70%;
+    height: 70%;
     border-radius: 50%;
     object-fit: cover;
     padding: 50px 0 50px 0;
@@ -207,6 +225,112 @@ img {
 .photo {
     width: 30%;
 }
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.align-text-left {
+    text-align: left;
+}
+
+
+.align-text-center {
+    text-align: center;
+}
+
+.align-text-right {
+    text-align: right;
+}
+
+.margin-top {
+    margin-top: 5rem;
+}
+
+.margin-top-small {
+    margin-top: 2rem;
+}
+
+.margin-top-bottom {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+#map {
+    height: 370px;
+    width: 100%;
+    border: 4px solid #F2B646;
+}
+
+.map-row {
+    margin-bottom: 2.5rem;
+}
+
+.mapboxgl-map {
+    overflow: hidden;
+}
+
+.mapboxgl-popup-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 250px;
+    padding: 15px;
+}
+
+.mapboxgl-popup-content h3 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.mapboxgl-popup-content h4 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+.mapboxgl-popup-content p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+}
+
+.mapboxgl-popup-close-button {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.map-key {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.map-key-text {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 0.8rem;
+    margin-left: 0.4rem;
+}
+
+.map-key-circle {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+}
+
 
 /* ---------- MEDIA QUERIES ---------- */
 @media screen and (max-width: 800px) {}

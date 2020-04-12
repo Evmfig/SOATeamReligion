@@ -10,9 +10,18 @@
     <!----- Google Fonts ----->
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:800|EB+Garamond&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <!----- Bootstrap ----->
     <link href='https://unpkg.com/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' />
+
+
+    <!-- Mapbox CSS -->
+    <link href='https://www.unpkg.com/mapbox-gl/dist/mapbox-gl.css' rel='stylesheet' />
+
+
 
     <!----- External CSS ----->
     <link rel="stylesheet" href="css/profile.css">
@@ -59,8 +68,8 @@
     <!---------- Main Content ---------->
     <!----- Meet Danny Yahini Text ----->
     <section class="container">
-        <div class="row justify-content-center">
-            <div class="offset-1 col-3 d-flex justify-content-end">
+        <div class="row justify-content-center margin-top-bottom">
+            <div class="col-4 d-flex justify-content-end">
                 <img class="portrait" src="images/Danny_Square.jpg" alt="A portrait of Danny Yahini.">
             </div>
             <div class="col-8 section-text">
@@ -109,7 +118,7 @@
 
         <!----- 4 Noble Truths Text ----->
         <div class="col section-text">
-            <h5>THE BUDDHA’S 4 NOBLE TRUTHS</h5>
+            <h6>THE BUDDHA’S 4 NOBLE TRUTHS</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit condimentum vulputate.
                 Vivamus vulputate lacus quis leo scelerisque, eu tempor lorem fringilla. Curabitur posuere at ex
                 facilisis porttitor. Fusce faucibus, orci vitae sollicitudin tempus, est sapien dictum ipsum, at
@@ -125,9 +134,24 @@
             <p>Source: https://thebuddhistcentre.com/text/four-noble-truths</p>
         </div>
 
-        <!----- Where He Practices Text ----->
-        <div class="row">
-            <div id="map" class="col"></div>
+        <!----- Where She Practices Text ----->
+        <div class="row flex-row map-row">
+            <div class="col-6 align-items-center flex-col">
+
+                <div id="map"></div>
+
+                <div class="row map-key">
+                    <div class="col-4 flex-row">
+                        <img src="images/DY-map-icon.svg" alt="Danny Yahini's map icon">
+                        <div class="map-key-text">Danny Yahini’s main location for spiritual practice.</div>
+                    </div>
+                    <div class="col-5 flex-row">
+                        <div class="map-key-circle" id="All spiritual centers map icon"></div>
+                        <div class="map-key-text">Other spiritual centers in Athens.</div>
+                    </div>
+                </div>
+
+            </div>
             <div class="col section-text">
                 <h5>WHERE HE PRACTICES: ATHENS KARMA THEGSUM CHÖLING (KTC)</h5>
                 <p>Yahini describes the Athens KTC as a very diverse group of open-minded people. While some members are
@@ -135,6 +159,7 @@
                     Almost all members hail from outside of Athens, and even a few from outside of the United States.
                     Some members are shy, while others are more outgoing. Yahini says the group welcomes everyone and
                     all ideas, which makes the Sangha stronger as a whole.</p>
+
             </div>
         </div>
 
@@ -252,62 +277,116 @@
         </div>
 
         <!----- Next Story Selection ----->
-        <div class="row">
-            <div class="col section-end">
-                <h3><a href="profile-Barb.html">BARB </a></h3>
-                <h6 id="practicing">Practices Paganism</h6>
-                <h2 id="slash"> | </h2>
+        <section class="container">
+            <div class="section-end">
+                <div class="col-2 align-text-right">
+                    <h3><a href="profile-Barb.html">BARB </a></h3>
+                    <h6 id="practicing">Practices<br>Paganism</h6>
+                </div>
+                <h2 id="slash2"> | </h2>
+                <div class="col-2 align-text-center">
+                    <h3><a href="profile-Danny.html">DANNY </a></h3>
+                    <h6 id="practicing">Practices<br>Buddhism</h6>
+                </div>
+                <h2 id="slash2"> | </h2>
+                <div class="col-2 align-text-left">
+                    <h3><a href="profile-Habiba.html">HABIBA</a></h3>
+                    <h6 id="practicing">Practices<br>Islam</h6>
+                </div>
             </div>
-            <div class="col section-end">
-                <h3><a href="profile-Danny.html">DANNY </a></h3>
-                <h6 id="practicing">Practices Buddhism</h6>
-                <h2 id="slash"> | </h2>
-            </div>
-            <div class="col section-end">
-                <h3><a href="profile-Habiba.html">HABIBA</a></h3>
-                <h6 id="practicing">Practices Islam</h6>
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!----- Footer ----->
-    <footer class="container-fluid bg-dark">
-        <div class="row">
-            <!----- Logo Link to Home Page ----->
-            <div class="col text-white">
-                <h5><a href="#">Soul of Athens - Home</a></h5>
-                <h5><a href="#">Back to Top</a></h5>
-                <p>© Soul of Athens 2020</p>
-            </div>
-            <!----- Credits ----->
-            <div class="col text-white">
-                <p>Max Catalano || Media Producer, Video Editor</p>
-                <p>Jenna Hyman || Media Producer, Photo Editor</p>
-                <p>Kathryn Maynard || Illustrator, UX Designer</p>
-                <p>Sarah Melaragno || Infographic Creator, UX Designer</p>
-                <p>Evann Figueroa || Project Manager, Developer</p>
-                <p>Jenna Hyman || Animation, Developer</p>
-            </div>
-        </div>
-    </footer>
+        </section>
 
-    <!----- Script ----->
-    <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function () {
-            myFunction()
-        };
-        // Progress bar
-        function myFunction() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-        }
-    </script>
+
+        <!----- Footer ----->
+        <footer class="container-fluid bg-dark">
+            <div class="row">
+                <!----- Logo Link to Home Page ----->
+                <div class="col text-white">
+                    <h5><a href="#">Soul of Athens - Home</a></h5>
+                    <h5><a href="#">Back to Top</a></h5>
+                    <p>© Soul of Athens 2020</p>
+                </div>
+                <!----- Credits ----->
+                <div class="col text-white">
+                    <p>Max Catalano || Media Producer, Video Editor</p>
+                    <p>Jenna Hyman || Media Producer, Photo Editor</p>
+                    <p>Kathryn Maynard || Illustrator, UX Designer</p>
+                    <p>Sarah Melaragno || Infographic Creator, UX Designer</p>
+                    <p>Evann Figueroa || Project Manager, Developer</p>
+                    <p>Jenna Hyman || Animation, Developer</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- javascript dependencies: first jQuery, then Popper.js, then Bootstrap JS -->
+        <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- Mapbox JS -->
+        <script src='https://unpkg.com/mapbox-gl/dist/mapbox-gl.js'></script>
+
+
+        <!----- Script ----->
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function () {
+                myFunction()
+            };
+            // Progress bar
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+
+
+            // MAP!!
+            // use YOUR mapbox account token
+            mapboxgl.accessToken =
+                'pk.eyJ1Ijoic2FyYWhtZWxhcmFnbm8iLCJhIjoiY2pzeXhxbmw2MDFkeTN5bnZ4YmsyNHlxNCJ9.AwJE5-r4wY23--j6tuAq6Q';
+
+            // new map
+            var map = new mapboxgl.Map({
+                container: 'map', // container id
+                style: 'mapbox://styles/sarahmelaragno/ck8w4lc8j2xit1ipa1a3u4odr', // stylesheet location
+                center: [-82.09809, 39.33156], //starting position [lng, lat]
+                zoom: 13.04, // starting zoom
+                hash: true // shows map zoom, center in url
+            });
+
+            map.on('click', function (e) {
+                var features = map.queryRenderedFeatures(e.point, {
+                    layers: ['all-protestantchristian-denomina', 'islam-habiba', 'interfaith',
+                        'catholic-churches', 'buddhist-danny', 'jewish', 'non-denominational'
+                    ] // replace this with the name of the layer
+                });
+
+                if (!features.length) {
+                    return;
+                }
+                var feature = features[0];
+
+                var popup = new mapboxgl.Popup({
+                        offset: [0, 0]
+                    })
+                    .setLngLat(feature.geometry.coordinates)
+                    .setHTML('<h3>' + feature.properties.place_name + '</h3><h5>' + feature.properties
+                        .denomination + '</h5><p>' + feature.properties.address + '</p>')
+                    .addTo(map);
+            });
+
+            // Add zoom and rotation controls to the map.
+            map.addControl(new mapboxgl.NavigationControl());
+
+            var bounds = [
+                [-82.284, 39.149], // [west, south]
+                [-81.8231, 39.450] // [east, north]
+            ];
+            // Set the map's max bounds.
+            map.setMaxBounds(bounds);
+        </script>
 </body>
 
 </html>
