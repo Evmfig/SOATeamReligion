@@ -205,8 +205,17 @@ p {
     line-height: 1.2rem;
 }
 
+ol p {
+    margin-top: 1rem;
+    color:#818282;
+    
+
+}
+
+
 li {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
 }
 
 /* ---------- ASSET STYLING ---------- */
