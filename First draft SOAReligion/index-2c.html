@@ -62,10 +62,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-10   w-100 ">
                 <h5 class="text-white">SUB HEADING</h5>
-                <p class="margin-top display-6 text-white">“Athens is a religiously diverse community settled in the
-                    predominantly Christian hills of Appalachia. While many religions are represented, not all religious
-                    groups have the same access to resources needed to practice together".</p>
-
+                <p class="margin-top display-6 text-white">Settled among the predominantly Protestant hills of Appalachia and home to Ohio University, Athens, Ohio stands out as a hub for education, community, and diversity. Since the town was founded in 1805, many religious and spiritual communities have emerged, each establishing their own formal and informal practice locations.</p>
             </div>
         </div>
     </div>
@@ -191,7 +188,16 @@
                </p>
            </div>
 
-       </div>
+           <div class="wrapper bg-dark more-padding-bold">
+            <div class="row justify-content-center">
+                <div class="col-lg-10   w-100 ">
+                    <h5 class="text-white">SUB HEADING</h5>
+                    <p class="margin-top display-6 text-white">While many spiritual communities are represented in Athens, they do not all experience the same access to resources needed to practice together. We spoke to three people from local spiritual communities to hear how the city of Athens has shaped their spiritual experience. Continue below to learn more about Barb, Danny, and Habiba! </p>
+                </div>
+            </div>
+         </div> 
+       
+        </div>
     </div>
 
 
@@ -398,23 +404,25 @@
                 new Chart(document.getElementById("horizontalBar"), {
                     "type": "horizontalBar",
                     "data": {
-                        "labels": [
-                            'Buddhist',
-                            'Catholic',
-                            'Interfaith',
-                            'Islamic',
-                            'Jewish',
-                            'Non-Denom. Christian',
-                            'Baptist',
-                            'Church of God',
-                            'Episcopal',
-                            'Evangelical',
-                            'Lutheran',
-                            'Methodist',
-                            'Pentecostal',
-                            'Presbyterian',
-                            'Seventh-Day Adventist',
-                        ],
+                        "labels": 
+                            
+                                [
+                                'Buddhist',
+                                'Catholic',
+                                'Interfaith',
+                                'Islamic',
+                                'Jewish',
+                                'Non-Denom. Christian',
+                                'Baptist',
+                                'Church of God',
+                                'Episcopal',
+                                'Evangelical',
+                                'Lutheran',
+                                'Methodist',
+                                'Pentecostal',
+                                'Presbyterian',
+                                'Seventh-Day Adventist',
+                                ],
                         
                         "datasets": [{
                             "label": "Number of Locations per Spirituality in Athens",
@@ -448,6 +456,11 @@
 
                                 }
                             }]
+                        },
+                        "legend": {
+                        "labels": {
+                            "fontColor": "#fff"
+                            }
                         }
                     }
                 });
