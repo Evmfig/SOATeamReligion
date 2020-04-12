@@ -277,6 +277,7 @@ header .overlay {
 }
 
 .align-items-center {
+    display:flex;
     align-items: center;
 }
 
@@ -1005,6 +1006,7 @@ i {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 #map {
@@ -1016,13 +1018,21 @@ i {
 
 }
 
+.mapboxgl-popup-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 250px;
+    padding: 15px;
+}
+
 .mapboxgl-popup-content h3{
     font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .mapboxgl-popup-content h4{
     font-family: 'Barlow', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .mapboxgl-popup-content p{
@@ -1030,6 +1040,10 @@ i {
     font-size: 15px;
 }
 
+.mapboxgl-popup-close-button {
+    font-size: 25px;
+    padding: 10px;
+}
 
 #key-main-row {
     display:flex;

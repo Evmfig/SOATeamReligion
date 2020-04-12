@@ -219,22 +219,37 @@ img {
 
 
 .mapboxgl-map {
-    overflow: visible;
+    overflow: hidden;
+}
+
+.mapboxgl-popup-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 250px;
+    padding: 15px;
 }
 
 .mapboxgl-popup-content h3{
     font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .mapboxgl-popup-content h4{
     font-family: 'Barlow', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .mapboxgl-popup-content p{
     font-family: 'Barlow', sans-serif;
     font-size: 15px;
 }
+
+.mapboxgl-popup-close-button {
+    font-size: 25px;
+    padding: 10px;
+}
+
+
 
 /* ---------- MEDIA QUERIES ---------- */
 @media screen and (max-width: 800px) {}
