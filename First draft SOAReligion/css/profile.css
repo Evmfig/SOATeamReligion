@@ -96,7 +96,7 @@ footer {
     padding: 30px;
     align-items: center;
     width: 100%;
-    background-color: #e5e6e6;
+    background-color: #727373;
     margin-top: 7rem;
 }
 
@@ -113,7 +113,7 @@ footer p {
     font-size: 15px;
     text-align: right;
     margin:2px;
-    color: #818282;
+    color: #b7b8b8;
 }
 
 footer a {
@@ -278,6 +278,7 @@ img {
     width: 30%;
 }
 
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -326,8 +327,35 @@ img {
     margin-bottom: 2rem;
 }
 
+
 .choose-story {
     margin-top: 10rem;
+}
+
+
+#barb-story {
+padding-top: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 2.5rem; 
+border-right: 1px solid lightgray;
+
+
+}
+
+#danny-story {
+    padding: 0px;
+
+}
+
+#habiba-story {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 2.5rem; 
+    border-left: 1px solid lightgray;
+
+
 }
 
 .pull-quote {
