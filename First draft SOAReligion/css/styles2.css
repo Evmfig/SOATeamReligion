@@ -29,17 +29,23 @@ h4,
 }
 
 h1,
-h2,
 h3,
 
 .h1,
-.h2,
 .h3 {
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
     font-size: 5rem;
     /* color: var(--dk-yellow); */
+}
+
+h2,
+.h2 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 2.7rem;
 }
 
 .display-1,
@@ -52,9 +58,9 @@ h3,
 }
 
 .display-5 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-style: italic;
-    /* line-height: 1; */
+    line-height: 1.2;
     /* margin-bottom: 2rem; */
     letter-spacing: 0.2px;
 }
@@ -237,6 +243,12 @@ header .overlay {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 25rem;
+}
+
+.margin-center4 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 26.7rem;
 }
 
 .margin-seestories {
@@ -483,7 +495,7 @@ header .overlay {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.75;
+    opacity: 0.55;
     transition: .5s ease;
     background-color: #1c1c1c;
 }
@@ -496,7 +508,7 @@ header .overlay {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.75;
+    opacity: 0.55;
     transition: .5s ease;
     background-color: #1c1c1c;
 }
@@ -509,7 +521,7 @@ header .overlay {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.75;
+    opacity: 0.55;
     transition: .75s ease;
     background-color: #1c1c1c;
 }
@@ -629,20 +641,20 @@ header .overlay {
 /* button hover barb */
 
 .button1 {
-    /* border-radius: 4px; */
+        /* border-radius: 4px; */
     /* background-color: #f4511e; */
     border: none;
     /* color: #FFFFFF; */
     text-align: center;
-    font-size: 28px;
+    font-size: ;
     padding: 20px;
-    width: 200px;
+    width: 100%;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: ;
     z-index: 9999;
-    margin-top: 2rem;
-    margin-left: 3rem;
+    margin-top: ;
+    margin-left: ;
 }
 
 .button1 span {
@@ -650,6 +662,8 @@ header .overlay {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    width:100%; 
+    text-align: center;
 }
 
 .button1 span:after {
@@ -657,16 +671,19 @@ header .overlay {
     position: absolute;
     font-family: 'EB Garamond', serif;
     font-size: 1.5rem;
-    font-style: italic;
     opacity: 0;
-    top: 1;
-    left: 20px;
+    top: 3;
+    width:100%; 
+
+    left: 1px;
     transition: 0.5s;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    line-height: 1.6rem;
+    text-align: center;
 }
 
 .button1:hover span {
-    padding-right: 25px;
+    padding-right: ;
 }
 
 .button1:hover span:after {
@@ -682,15 +699,15 @@ header .overlay {
     border: none;
     /* color: #FFFFFF; */
     text-align: center;
-    font-size: 28px;
+    font-size: ;
     padding: 20px;
-    width: 200px;
+    width: 100%;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: ;
     z-index: 9999;
-    margin-top: 0rem;
-    margin-left: 3rem;
+    margin-top: ;
+    margin-left: ;
 }
 
 .button2 span {
@@ -698,6 +715,8 @@ header .overlay {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    width:100%; 
+    text-align: center;
 }
 
 .button2 span:after {
@@ -707,13 +726,17 @@ header .overlay {
     font-size: 1.5rem;
     opacity: 0;
     top: 3;
-    left: 20px;
+    width:100%; 
+
+    left: 1px;
     transition: 0.5s;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    line-height: 1.6rem;
+    text-align: center;
 }
 
 .button2:hover span {
-    padding-right: 25px;
+    padding-right: ;
 }
 
 .button2:hover span:after {
@@ -728,15 +751,15 @@ header .overlay {
     border: none;
     /* color: #FFFFFF; */
     text-align: center;
-    font-size: 28px;
+    font-size: ;
     padding: 20px;
-    width: 200px;
+    width: 100%;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: ;
     z-index: 9999;
-    margin-top: 0rem;
-    margin-left: 3rem;
+    margin-top: ;
+    margin-left: ;
 }
 
 .button3 span {
@@ -744,6 +767,8 @@ header .overlay {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    width:100%; 
+    text-align: center;
 }
 
 .button3 span:after {
@@ -753,13 +778,17 @@ header .overlay {
     font-size: 1.5rem;
     opacity: 0;
     top: 3;
-    left: 20px;
+    width:100%; 
+
+    left: 1px;
     transition: 0.5s;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    line-height: 1.6rem;
+    text-align: center;
 }
 
 .button3:hover span {
-    padding-right: 25px;
+    padding-right: ;
 }
 
 .button3:hover span:after {
