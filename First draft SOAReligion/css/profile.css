@@ -75,7 +75,12 @@ font-family: 'EB Garamond', serif; */
     position: relative;
     padding: 10px;
     margin-left: 10px;
-    color: darkgray;
+    color:;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    max-width: 95%;
+    line-height: 1.1rem;
 
 }
 
@@ -189,7 +194,7 @@ h5 {
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
     font-size: 1.2rem;
-   
+   margin-bottom: 1rem;
 
 }
 
@@ -203,8 +208,8 @@ h6 {
 
 p {
     font-family: 'EB Garamond', serif;
-    font-size: 16px;
-    line-height: 1.2rem;
+    font-size: 17px;
+    line-height: 1.3rem;
 }
 
 ol p {
@@ -286,6 +291,8 @@ img {
     align-items: center;
 }
 
+
+
 .align-text-left {
     text-align: left;
 }
@@ -319,6 +326,11 @@ img {
 
 .choose-story {
     margin-top: 10rem;
+}
+
+.pull-quote {
+    margin-bottom: 5rem;
+    margin-top: 2rem;
 }
 
 #map {
@@ -382,6 +394,10 @@ img {
     width: 12px;
     height: 12px;
     background-color: black;
+}
+
+.flag-img {
+    width: 100%;
 }
 
 
