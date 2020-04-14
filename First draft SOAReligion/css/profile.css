@@ -450,9 +450,23 @@ img {
         line-height: 1.4rem;
     }
 
+    .map-key {
+        padding:1rem;
+        margin-top: 0px;
+    }
+
    .map-key-text {
        display: flex;
        align-items: center;
+   }
+
+   .map-key-circle {
+       padding: 0.6rem;
+       margin-left:0.7rem;
+       margin-top:0.6rem;
+       margin-bottom:0.6rem;
+
+
    }
 
    #barb-story {
@@ -478,6 +492,8 @@ img {
         line-height: 1.1rem;
         margin-bottom: 0.5rem;
     }
+
+    
 
 }
 
