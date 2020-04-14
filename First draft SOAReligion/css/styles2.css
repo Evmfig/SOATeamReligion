@@ -1029,6 +1029,8 @@ i {
     margin: 0px 8px;
 }
 
+#infographics-row {}
+
 
 /* MAP */
 
@@ -1040,7 +1042,7 @@ i {
 }
 
 #map {
-    height: 450px;
+    height: 400px;
     width: 100%;
     /* border-radius: 25px; */
     /* border: 2px solid #ffc107; */
@@ -1075,24 +1077,30 @@ i {
     padding: 10px;
 }
 
+
+
+
+
 #key-main-row {
     display: flex;
     flex-direction: row;
     padding: 20px;
+    border: 1px solid rgba(99, 99, 99, 0.7);
+    background-color: rgba(99, 99, 99, 0.5);
 }
 
 .key-main-name {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .key-protestant-name {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .key-row-bottom {
