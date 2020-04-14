@@ -441,6 +441,47 @@ img {
 
 
 /* ---------- MEDIA QUERIES ---------- */
-@media screen and (max-width: 800px) {}
 
-@media screen and (max-width: 356px) {}
+
+@media screen and (max-width: 800px) {
+
+    p {
+        font-size: 20px;
+        line-height: 1.4rem;
+    }
+
+   .map-key-text {
+       display: flex;
+       align-items: center;
+   }
+
+   #barb-story {
+    padding-right: 1rem;
+    }
+
+    #danny-story {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+    }
+
+    #habiba-story {
+        padding-left: 1rem;
+     }
+
+    #practicing {
+        font-size: 1.3rem;
+
+    }
+
+    footer p{
+        line-height: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 800px) {}
