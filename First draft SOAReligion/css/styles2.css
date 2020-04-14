@@ -845,6 +845,7 @@ header .overlay {
     .sidenav a {
         font-size: 18px;
     }
+
 }
 
 /* bottom nav bar */
@@ -1039,10 +1040,11 @@ i {
     font-weight: 600;
     text-align: center;
     font-size: 1.2rem;
+    line-height: 1.2rem;
 }
 
 #map {
-    height: 400px;
+    min-height:400px;
     width: 100%;
     /* border-radius: 25px; */
     /* border: 2px solid #ffc107; */
@@ -1077,7 +1079,9 @@ i {
     padding: 10px;
 }
 
-
+#horizontalBar {
+    
+}
 
 
 
@@ -1203,3 +1207,24 @@ i {
     line-height: 1.5rem;
     font-style: italic;
 }
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+   
+    #map {min-height: 250px;}
+
+    .map-title {
+        margin-top: 2rem;
+    }
+
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
