@@ -226,7 +226,7 @@ p {
 ol p {
     margin-top: 1rem;
     color: #818282;
-
+    overflow:auto;
 
 }
 
@@ -445,6 +445,14 @@ img {
 
 @media screen and (max-width: 800px) {
 
+    .top-nav a {
+        margin-top: 1rem;
+    }
+
+    #name {
+        font-size: 3.5rem;
+    }
+
     p {
         font-size: 20px;
         line-height: 1.4rem;
@@ -484,7 +492,7 @@ img {
      }
 
     #practicing {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
 
     }
 
