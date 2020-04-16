@@ -226,7 +226,7 @@ p {
 ol p {
     margin-top: 1rem;
     color: #818282;
-    overflow:auto;
+    overflow: auto;
 
 }
 
@@ -240,6 +240,8 @@ li {
 /* IMG and Video Styling */
 a:link {
     text-decoration: none;
+    color: #808080;
+
 }
 
 a:visited {
@@ -249,12 +251,11 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    color: #808080;
+    color: #F2B646;
 }
 
 a:active {
     text-decoration: underline;
-    color: #D9D9D9;
 }
 
 #thin {
@@ -459,26 +460,26 @@ img {
     }
 
     .map-key {
-        padding:1rem;
+        padding: 1rem;
         margin-top: 0px;
     }
 
-   .map-key-text {
-       display: flex;
-       align-items: center;
-   }
+    .map-key-text {
+        display: flex;
+        align-items: center;
+    }
 
-   .map-key-circle {
-       padding: 0.6rem;
-       margin-left:0.7rem;
-       margin-top:0.6rem;
-       margin-bottom:0.6rem;
+    .map-key-circle {
+        padding: 0.6rem;
+        margin-left: 0.7rem;
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
 
 
-   }
+    }
 
-   #barb-story {
-    padding-right: 1rem;
+    #barb-story {
+        padding-right: 1rem;
     }
 
     #danny-story {
@@ -489,19 +490,19 @@ img {
 
     #habiba-story {
         padding-left: 1rem;
-     }
+    }
 
     #practicing {
         font-size: 1.5rem;
 
     }
 
-    footer p{
+    footer p {
         line-height: 1.1rem;
         margin-bottom: 0.5rem;
     }
 
-    
+
 
 }
 
