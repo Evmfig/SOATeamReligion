@@ -62,7 +62,7 @@
     <!-- DESCRIPTION -->
     <div class="wrapper bg-dark more-padding-bold">
         <div class="row justify-content-center">
-            <div class="col-lg-10   w-100 ">
+            <div class="col-md-9   w-100 ">
                 <p class="margin-top display-6 text-white">Settled among the predominantly Protestant hills of
                     Appalachia and home to Ohio University, Athens, Ohio stands out as a hub for education, community,
                     and diversity. Since the town was founded in 1805, many religious and spiritual communities have
@@ -80,128 +80,136 @@
                     <div id="map">
                     </div>
             </div>
-            <!-- BAR CHART -->
-            <div class="col-md-6 margin-left">
-                <p class="text-white map-title">NUMBER OF CENTERS PER SPIRITUALITY</p>
-                <canvas id="horizontalBar" style="width: 100%; height: 90%;"></canvas>
-            </div>
-        </div>
-        <div class="row flex-row justify-content-center margin-top">
-            <div class="col-md-6 text-white">
-                <div class="row" id="key-main-row">
-                    <!-- TABLE -->
-                    <div class="col-md-2">
-                        <div class="row flex-row align-items-center key-row-top">
-                            <div class="key-circle" id="buddhist-circle"></div>
-                            <div class="key-main-name">Buddhist</div>
-                        </div>
-
-                        <div class="row flex-row align-items-center">
-                            <div class="key-circle" id="catholic-circle"></div>
-                            <div class="key-main-name">Catholic</div>
-                        </div>
-
-                        <div class="row flex-row align-items-center key-row-bottom">
-                            <div class="key-circle" id="interfaith-circle"></div>
-                            <div class="key-main-name">Interfaith</div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="row flex-row align-items-center key-row-top">
-                            <div class="key-circle" id="islamic-circle"></div>
-                            <div class="key-main-name">Islamic</div>
-                        </div>
-
-                        <div class="row flex-row align-items-center">
-                            <div class="key-circle" id="jewish-circle"></div>
-                            <div class="key-main-name">Jewish</div>
-                        </div>
-
-                        <div class="row flex-row align-items-center key-row-bottom">
-                            <div class="key-circle" id="nondenom-circle"></div>
-                            <div class="key-main-name">Non-Denom. Christian</div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7 flex-col">
-                        <div class="row key-main-name">Protestant</div>
-                        <div class="row flex-row" id="indent">
-                            <div class="col-md-4">
-                                <div class="row flex-row align-items-center key-row-top">
-                                    <div class="key-circle" id="baptist-circle"></div>
-                                    <div class="key-protestant-name">Baptist</div>
-                                </div>
-
-                                <div class="row flex-row align-items-center">
-                                    <div class="key-circle" id="churchofgod-circle"></div>
-                                    <div class="key-protestant-name">Church of God</div>
-                                </div>
-
-                                <div class="row flex-row align-items-center key-row-bottom">
-                                    <div class="key-circle" id="episcopal-circle"></div>
-                                    <div class="key-protestant-name">Episcopal</div>
-                                </div>
+                <div id="key-container">
+                    <p class="text-white" id="key-p">*Religions listed include only those with at least one
+                        formally established
+                        practice/worship location within Athens city limits listed online at:
+                        <br>
+                        <a href="https://www.ohio.edu/student-affairs/students/places-worship  ">ohio.edu</a>
+                        |
+                        <a href="https://athensohio.com/category/community/religious-centers/  ">athensohio.com</a>
+                        |
+                        <a href="https://www.churchfinder.com/churches/oh/athens">churchfinder.com</a>
+                    </p>
+                    <div class=" text-white" id="key-main-row">
+                        <!-- TABLE -->
+                        <div class="col">
+                            <div class="row flex-row align-items-center key-row-top">
+                                <div class="key-circle" id="buddhist-circle"></div>
+                                <div class="key-main-name">Buddhist</div>
+                            </div>
+    
+                            <div class="row flex-row align-items-center">
+                                <div class="key-circle" id="catholic-circle"></div>
+                                <div class="key-main-name">Catholic</div>
+                            </div>
+    
+                            <div class="row flex-row align-items-center key-row-bottom">
+                                <div class="key-circle" id="interfaith-circle"></div>
+                                <div class="key-main-name">Interfaith</div>
                             </div>
 
-                            <div class="col-md-3">
-                                <div class="row flex-row align-items-center key-row-top">
-                                    <div class="key-circle" id="evangelical-circle"></div>
-                                    <div class="key-protestant-name">Evangelical</div>
-                                </div>
-
-                                <div class="row flex-row align-items-center">
-                                    <div class="key-circle" id="lutheran-circle"></div>
-                                    <div class="key-protestant-name">Lutheran</div>
-                                </div>
-
-                                <div class="row flex-row align-items-center key-row-bottom">
-                                    <div class="key-circle" id="methodist-circle"></div>
-                                    <div class="key-protestant-name">Methodist</div>
-                                </div>
+                            <div class="row flex-row align-items-center key-row-top">
+                                <div class="key-circle" id="islamic-circle"></div>
+                                <div class="key-main-name">Islamic</div>
                             </div>
-
-                            <div class="col-md-5">
-                                <div class="row flex-row align-items-center key-row-top">
-                                    <div class="key-circle" id="pentecostal-circle"></div>
-                                    <div class="key-protestant-name">Pentecostal</div>
-                                </div>
-
-                                <div class="row flex-row align-items-center">
-                                    <div class="key-circle" id="presbyterian-circle"></div>
-                                    <div class="key-protestant-name">Presbyterian</div>
-                                </div>
-
-                                <div class="row flex-row align-items-center key-row-bottom">
-                                    <div class="key-circle" id="SDA-circle"></div>
-                                    <div class="key-protestant-name">Seventh-Day Adventist</div>
-                                </div>
+    
+                            <div class="row flex-row align-items-center">
+                                <div class="key-circle" id="jewish-circle"></div>
+                                <div class="key-main-name">Jewish</div>
+                            </div>
+    
+                            <div class="row flex-row align-items-center key-row-bottom">
+                                <div class="key-circle" id="nondenom-circle"></div>
+                                <div class="key-main-name">Non-Denom. Christian</div>
                             </div>
                         </div>
+    
+                    
+    
+                        <div class="col">
+                            <div class="row key-main-name">Protestant</div>
+                            <div class=" flex-col" id="indent">
+                                    <div class="row flex-row align-items-center key-row-top">
+                                        <div class="key-circle" id="baptist-circle"></div>
+                                        <div class="key-protestant-name">Baptist</div>
+                                    </div>
+    
+                                    <div class="row flex-row align-items-center">
+                                        <div class="key-circle" id="churchofgod-circle"></div>
+                                        <div class="key-protestant-name">Church of God</div>
+                                    </div>
+    
+                                    <div class="row flex-row align-items-center key-row-bottom">
+                                        <div class="key-circle" id="episcopal-circle"></div>
+                                        <div class="key-protestant-name">Episcopal</div>
+                                    </div>
+                                
+    
+                                    <div class="row flex-row align-items-center key-row-top">
+                                        <div class="key-circle" id="evangelical-circle"></div>
+                                        <div class="key-protestant-name">Evangelical</div>
+                                    </div>
+    
+                                    <div class="row flex-row align-items-center">
+                                        <div class="key-circle" id="lutheran-circle"></div>
+                                        <div class="key-protestant-name">Lutheran</div>
+                                    </div>
+    
+                                    <div class="row flex-row align-items-center key-row-bottom">
+                                        <div class="key-circle" id="methodist-circle"></div>
+                                        <div class="key-protestant-name">Methodist</div>
+                                    </div>
+    
+                                    <div class="row flex-row align-items-center key-row-top">
+                                        <div class="key-circle" id="pentecostal-circle"></div>
+                                        <div class="key-protestant-name">Pentecostal</div>
+                                    </div>
+    
+                                    <div class="row flex-row align-items-center">
+                                        <div class="key-circle" id="presbyterian-circle"></div>
+                                        <div class="key-protestant-name">Presbyterian</div>
+                                    </div>
+    
+                                    <div class="row flex-row align-items-center key-row-bottom">
+                                        <div class="key-circle" id="SDA-circle"></div>
+                                        <div class="key-protestant-name">Seventh-Day Adventist</div>
+                                    </div>
+                               
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            <!-- INFORMATION -->
-            <div class="col-sm-2 align-items-center">
-                <p class="text-white text-align-right" id="key-p">*Religions listed include only those with at least one
-                    formally established
-                    practice/worship location within Athens city limits listed online at:
-                    <br>
-                    <a href="https://www.ohio.edu/student-affairs/students/places-worship  ">ohio.edu</a>
-                    |
-                    <a href="https://athensohio.com/category/community/religious-centers/  ">athensohio.com</a>
-                    |
-                    <a href="https://www.churchfinder.com/churches/oh/athens">churchfinder.com</a>
-                </p>
+        </div>
+       
+        <div class="wrapper bg-dark more-padding-bold">
+            <div class="row justify-content-center">
+                <div class="col-md-9 w-100 ">
+                    <p class="margin-top display-6 text-white">While many spiritual communities are represented in
+                        Athens, they do not all experience the same access to resources needed to practice together.</p>
+                </div>
             </div>
         </div>
-    </div>
+
+        <div class="wrapper bg-dark more-padding-bold-sides-only">
+            <div class="row justify-content-center">
+            <!-- BAR CHART -->
+            <div class="col-md-7 margin-left">
+                <p class="text-white map-title">NUMBER OF CENTERS PER SPIRITUALITY</p>
+                <canvas id="horizontalBar" style=""></canvas>
+            </div>    
+            </div>
+        </div>    
+            
+        
+    
     <!-- SECOND DESCRIPTION -->
     <div class="wrapper bg-dark more-padding-bold">
         <div class="row justify-content-center">
-            <div class="col-lg-10 w-100 ">
-                <p class="margin-top display-6 text-white">While many spiritual communities are represented in
-                    Athens, they do not all experience the same access to resources needed to practice together.
+            <div class="col-md-9 w-100 ">
+                <p class="margin-top display-6 text-white">
                     We spoke to three people from local spiritual communities to hear how the city of Athens has
                     shaped their spiritual experience. Continue below to learn more about Barb, Danny, and
                     Habiba! </p>
@@ -218,12 +226,9 @@
             <div class="col-12">
 
                 <div class="hr-sect h5 text-white">CHOOSE A STORY</div>
-                <div id="comment"><strong>Hover over</strong> a person's name to find out what spirituality they
-                    practice.<br> <strong>Click the photo profile</strong> to read their story.</div>
+                
             </div>
-            </h4>
         </div>
-    </div>
     </div>
 
     <!-- Profile page -->

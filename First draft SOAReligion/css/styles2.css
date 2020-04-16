@@ -1034,7 +1034,10 @@ header .overlay {
     margin: 0px 8px;
 }
 
-#infographics-row {}
+#infographics-row {
+    display: flex;
+    align-items: flex-end;
+}
 
 
 /* MAP */
@@ -1083,18 +1086,26 @@ header .overlay {
     padding: 10px;
 }
 
-#horizontalBar {}
 
-.chart-container {
-    min-height: 400px;
+
+#key-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    height: 100%;
+    padding: 30px;
+    border: 1px solid rgba(99, 99, 99, 0.7);
+    background-color: rgba(99, 99, 99, 0.5);
+    
+    margin-left: 2rem;
+
 }
 
 #key-main-row {
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    border: 1px solid rgba(99, 99, 99, 0.7);
-    background-color: rgba(99, 99, 99, 0.5);
+   margin-top: 1rem;
+    
 }
 
 
@@ -1195,8 +1206,7 @@ header .overlay {
 
 #key-p {
     line-height: 1.1rem;
-    margin-left: 0.3rem;
-    margin-top: 0.5rem;
+    
     font-family: 'Barlow', sans-serif;
     font-weight: 200;
     font-size: 14px;
@@ -1233,11 +1243,17 @@ header .overlay {
         margin-top: 2rem;
     }
 
+    #key-container {
+        margin-top: 2rem;
+        margin-left: 0rem;
+        max-width: 250px;
+    }
+
     #key-main-row {
         display: flex;
         flex-direction: column;
-        margin-top: 2rem;
-        padding: 2rem;
+        margin-top: 0rem;
+       
     }
 
     .key-main-name {
@@ -1265,6 +1281,14 @@ header .overlay {
     .more-padding-bold-sides-only {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
+    }
+
+    .more-padding {
+        padding: 1rem !important;
+    }
+    
+    .more-padding-bold {
+        padding: 3rem !important;
     }
 
 }  
