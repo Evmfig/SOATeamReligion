@@ -1188,6 +1188,7 @@ header .overlay {
 #key-p {
     line-height: 120%;
     margin-left: 0.3rem;
+    margin-top: 0.5rem;
 }
 
 #key-p a {
