@@ -38,11 +38,8 @@
     <!-- video background new -->
     <header>
         <div class="overlay bkgd-image-5"></div>
-        <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"> 
-            <source src="video/parallax_video2.mp4" type="video/mp4">
-        </video>-->
-        <div class="container-fluid xh-100 more-padding-bold">
-            <div class="row d-flex xh-100 align-items-center">
+        <div class="container-fluid  more-padding-bold">
+            <div class="row d-flex  align-items-center">
                 <div class="col-md-8 w-100 text-white">
                     <!-- TITLE FADING -->
                     <h1 class="w3-animate-fading1 font-weight-bold">BELIEFS </h1>
@@ -54,8 +51,11 @@
                         ATHENS</h1>
                 </div>
             </div>
+
             <!-- DOWN ARROW -->
-            <p><i class="w3-animate-fading5 arrow down"></i></p>
+            <div class="container">
+                <a href="#subhead" class="w3-animate-fading5 arrowbutton down js-scroll-trigger"></a>
+            </div>
         </div>
     </header>
 
@@ -73,7 +73,7 @@
 
     <!-- MAP and BAR CHART -->
 
-    <div class="wrapper bg-dark more-padding-bold-no-top">
+    <div id="subhead" class="wrapper bg-dark more-padding-bold-no-top">
         <div class="row flex-row justify-content-center" id="infographics-row">
             <div class="col-md-4">
                 <p class="text-white map-title">LOCATIONS OF SPIRITUAL CENTERS IN ATHENS</h6>
@@ -215,9 +215,10 @@
     <div class="container-fluid bg-dark">
         <div class="row">
             <div class="col-12">
-             
+
                 <div class="hr-sect h5 text-white">CHOOSE A STORY</div>
-                <div id="comment"><strong>Hover over</strong> a person's name to find out what spirituality they practice.<br> <strong>Click on</strong> a person's name to read their story.</div>
+                <div id="comment"><strong>Hover over</strong> a person's name to find out what spirituality they
+                    practice.<br> <strong>Click on</strong> a person's name to read their story.</div>
             </div>
             </h4>
         </div>
@@ -262,25 +263,7 @@
                 </div>
             </div>
 
-            <!-- Top navbar 
 
-            <div class="wrapper">
-                <div class="container">
-
-                    <div id="mySidenav" class="sidenav navba h5">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="#">Episode 01</a>
-                        <a href="#">Portland, OR</a>
-                        <a href="#">Rutland, OH</a>
-                        <a href="#">Detroit, MI</a>
-                        <a href="#">Athens, OH</a>
-                        <a href="#">Dayton, OH</a>
-                    </div>
-
-                    <span class="more-padding" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-                </div>
-            </div> -->
 
 
             <!-- javascript dependencies: first jQuery, then Popper.js, then Bootstrap JS -->
@@ -439,7 +422,7 @@
                                 'Seventh-Day Adventist',
                             ],
 
-                            
+
                         "datasets": [{
                             "label": "Number of Locations per Spirituality in Athens",
                             "data": [1, 2, 2, 1, 2, 7, 3, 1, 1, 1, 1, 6, 2, 2, 1, ],
