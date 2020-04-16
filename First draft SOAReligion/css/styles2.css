@@ -172,9 +172,13 @@ header .overlay {
     padding-left: 5rem !important;
     padding-right: 5rem !important;
     padding-bottom: 5rem !important;
-
-
 }
+
+.more-padding-bold-sides-only {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+}
+
 
 .no-padding {
     padding: 0 !important;
@@ -1091,6 +1095,8 @@ header .overlay {
     background-color: rgba(99, 99, 99, 0.5);
 }
 
+
+
 .key-main-name {
     font-family: 'Barlow', sans-serif;
     font-style: normal;
@@ -1186,9 +1192,13 @@ header .overlay {
 
 
 #key-p {
-    line-height: 120%;
+    line-height: 1.1rem;
     margin-left: 0.3rem;
     margin-top: 0.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    
 }
 
 #key-p a {
@@ -1221,8 +1231,34 @@ header .overlay {
         margin-top: 2rem;
     }
 
+    #key-main-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
 
-}
+    .key-main-name {
+        margin-bottom:0.3rem;
+        font-size: 14px;
+
+    }
+
+    .key-protestant-name {
+        font-size: 14px;
+
+    }
+
+
+    #indent {
+        margin-left: 0px;
+    }
+
+    
+    #key-p {
+     
+        margin-top: 1rem;
+    }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
