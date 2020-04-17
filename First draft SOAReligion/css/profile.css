@@ -64,6 +64,11 @@ font-family: 'EB Garamond', serif; */
     padding: 50px;
 }
 
+.section-text-sides-only {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .section-video {
     position: relative;
     padding-top: 10px;
@@ -294,8 +299,7 @@ img {
 }
 
 .portrait {
-    width: 100%;
-    height: 100%;
+   
     border-radius: 50%;
     object-fit: cover;
     padding: 50px 0 50px 0;
@@ -339,6 +343,11 @@ img {
 .justify-content-center {
     display: flex;
     justify-content: center;
+}
+
+.justify-content-flex-end {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .margin-top {
