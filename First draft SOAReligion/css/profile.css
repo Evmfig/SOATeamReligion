@@ -76,6 +76,15 @@ font-family: 'EB Garamond', serif; */
     width: 100%;
 }
 
+.embed-responsive {
+    position: relative;
+    display: inline-block;
+    width: 88%;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+}
+
 .caption {
     position: relative;
     padding: 10px;
@@ -232,7 +241,7 @@ ol p {
     margin-top: 0.6rem;
     color: #818282;
     overflow: auto;
-    font-family: 'Barlow',sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 0.8rem;
     line-height: 1rem;
 
@@ -246,16 +255,16 @@ li {
 
 
 .info {
-    background-color: 
-    #efefef;
+    background-color:
+        #efefef;
     padding: 50px;
     margin-top: ;
-    color:#6c6c6c;
+    color: #6c6c6c;
 
 }
 
 #pillars {
-    margin-right:1.7rem;
+    margin-right: 1.7rem;
 }
 
 /* ---------- ASSET STYLING ---------- */
