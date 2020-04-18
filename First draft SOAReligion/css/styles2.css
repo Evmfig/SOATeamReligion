@@ -1169,39 +1169,39 @@ header .overlay {
 }
 
 #baptist-circle {
-    background-color: #8D0C15;
+    background-color: #99000a;
 }
 
 #churchofgod-circle {
-    background-color: #BC101C;
+    background-color: #b3000c;
 }
 
 #episcopal-circle {
-    background-color: #EB1423;
+    background-color: #cc000e;
 }
 
 #evangelical-circle {
-    background-color: #EF434F;
+    background-color: #ff1a29;
 }
 
 #lutheran-circle {
-    background-color: #F3727B;
+    background-color: #ff6670;
 }
 
 #methodist-circle {
-    background-color: #F7A1A7;
+    background-color: #ff99a0;
 }
 
 #pentecostal-circle {
-    background-color: #fac7ca;
+    background-color: #ffc2c6;
 }
 
 #presbyterian-circle {
-    background-color: #FCDADC;
+    background-color: #ffdbde;
 }
 
 #SDA-circle {
-    background-color: #fde8e9;
+    background-color: #fff0f0;
 }
 
 
@@ -1230,6 +1230,14 @@ header .overlay {
     font-style: italic;
 }
 
+#chart-container {
+    background-color: rgba(216,217,217);
+    padding: 25px;
+}
+
+#horizontalBar {
+    font-family: 'Barlow', sans-serif !important;
+}
 
 
 

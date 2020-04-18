@@ -19,6 +19,7 @@
         gtag('config', 'UA-62927028-6');
     </script>
 
+
     <!-- bootstrap CSS -->
     <link href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -28,6 +29,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+        
 
     <!-- Mapbox CSS -->
     <link href='https://www.unpkg.com/mapbox-gl/dist/mapbox-gl.css' rel='stylesheet' />
@@ -205,10 +208,14 @@
         </div>
     </div>
 
+
+  
+
+
     <div class="wrapper bg-dark more-padding-bold-sides-only">
         <div class="row justify-content-center">
             <!-- BAR CHART -->
-            <div class="col-md-7 margin-left">
+            <div class="col-md-7" id=>
                 <p class="text-white map-title">NUMBER OF CENTERS PER SPIRITUALITY</p>
                 <canvas id="horizontalBar" style=""></canvas>
             </div>
@@ -416,11 +423,19 @@
         map.setMaxBounds(bounds);
 
         // CHART!!
+        Chart.defaults.global.defaultFontColor = 'white';
+        Chart.defaults.global.defaultFontFamily = 'Barlow';
+        Chart.defaults.global.defaultFontSize = '14';
+        Chart.defaults.global.tooltips.backgroundColor = 'rgba(216,217,217,0.6)';
+        Chart.defaults.global.tooltips.bodyMarginBottom = '9';
+        
+
+
         new Chart(document.getElementById("horizontalBar"), {
             "type": "horizontalBar",
             "data": {
                 "labels":
-
+                    
                     [
                         'Buddhist',
                         'Catholic',
@@ -438,6 +453,7 @@
                         'Presbyterian',
                         'Seventh-Day Adventist',
                     ],
+                        
 
 
                 "datasets": [{
@@ -451,15 +467,15 @@
                         "#93c567",
                         "#f8d80d",
                         "#ff7733",
-                        "#8d0c15",
-                        "#bc101c",
-                        "#EB1423",
-                        "#EF434F",
-                        "#F3727B",
-                        "#F7A1A7",
-                        "#fac7ca",
-                        "#FCDADC",
-                        "#fde8e9",
+                        "#99000a",
+                        "#b3000c",
+                        "#cc000e",
+                        "#ff1a29",
+                        "#ff6670",
+                        "#ff99a0",
+                        "#ffc2c6",
+                        "#ffdbde",
+                        "#fff0f0",
                     ],
 
                 }]
@@ -468,18 +484,30 @@
                 "scales": {
                     "xAxes": [{
                         "ticks": {
-                            "beginAtZero": true
+                            "beginAtZero": true,
+                            
 
+                        },
+                        "gridLines": {
+                            "color": "rgba(216,217,217,0.25)"
+                            
                         }
                     }]
                 },
+
+                
+
                 "legend": {
+                    "display": false,
                     "labels": {
-                        "fontColor": "#fff"
+                        "fontColor": "#000000"
                     }
                 }
             }
         });
+
+
+       
     </script>
 </body>
 
