@@ -60,6 +60,17 @@ font-family: 'EB Garamond', serif; */
     line-height: 1.5rem;
 }
 
+#practicing2 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.3rem;
+    position: relative;
+    padding: 0px;
+    line-height: 1.4rem;
+}
+
+
 .section-text {
     padding: 60px;
     display: ;
@@ -204,6 +215,7 @@ h2 {
 h3 {
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
+    font-size: 2rem;
 
 }
 
@@ -498,6 +510,14 @@ img {
         line-height: 1.4rem;
     }
 
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .section-text {
+        padding: 40px;
+    }
+
     .map-key {
         padding: 1rem;
         margin-top: 0px;
@@ -517,6 +537,10 @@ img {
 
     }
 
+    .flag-img {
+       margin-bottom: 1.5rem;
+    }
+
     #barb-story {
         padding-right: 1rem;
     }
@@ -531,11 +555,7 @@ img {
         padding-left: 1rem;
     }
 
-    #practicing {
-        font-size: 1.5rem;
-
-    }
-
+    
     footer p {
         line-height: 1.1rem;
         margin-bottom: 0.5rem;
