@@ -61,7 +61,8 @@ font-family: 'EB Garamond', serif; */
 }
 
 .section-text {
-    padding: 50px;
+    padding: 60px;
+    display: ;
 }
 
 .section-text-sides-only {
@@ -225,7 +226,7 @@ h5 {
 
 h6 {
     font-family: 'Barlow', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 1rem;
 
