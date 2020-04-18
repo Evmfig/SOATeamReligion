@@ -215,9 +215,9 @@
     <div class="wrapper bg-dark more-padding-bold-sides-only">
         <div class="row justify-content-center">
             <!-- BAR CHART -->
-            <div class="col-md-7" id=>
+            <div class="col" id="chart-col">
                 <p class="text-white map-title">NUMBER OF CENTERS PER SPIRITUALITY</p>
-                <canvas id="horizontalBar" style=""></canvas>
+                <canvas id="horizontalBar" style="display: block; height: 100%; width: 100%;"></canvas>
             </div>
         </div>
     </div>
@@ -241,7 +241,7 @@
 
     <!-- Choose a story -->
     <div class="container-fluid bg-dark">
-        <div class="row">
+        <div class="row padding-bottom">
             <div class="col-12">
 
                 <div class="hr-sect h5 text-white">CHOOSE A STORY</div>
@@ -427,9 +427,6 @@
         Chart.defaults.global.defaultFontStyle = 'bold';
         Chart.defaults.global.tooltips.backgroundColor = 'rgba(216,217,217,0.6)';
     
-        
-        
-
 
         new Chart(document.getElementById("horizontalBar"), {
             "type": "horizontalBar",
@@ -485,14 +482,17 @@
                     "xAxes": [{
                         "ticks": {
                             "beginAtZero": true,
-                            "fontSize": "14"
+                            "fontSize": "14",
+                            
 
                         },
                         "gridLines": {
                             "color": "rgba(216,217,217,0.3)"
                             
                         }
-                    }]
+                    }],
+
+                    
                 },
 
                 

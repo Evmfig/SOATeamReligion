@@ -272,6 +272,10 @@ header .overlay {
     margin-left: ;
 }
 
+.padding-bottom {
+    padding-bottom: 2rem;
+}
+
 .show-bkgd {
     border: #cccccc;
     background-color: #dddddd;
@@ -1230,9 +1234,8 @@ header .overlay {
     font-style: italic;
 }
 
-#chart-container {
-    background-color: rgba(216,217,217);
-    padding: 25px;
+#chart-col {
+    max-width: 700px;
 }
 
 #horizontalBar {
@@ -1287,6 +1290,13 @@ header .overlay {
         margin-top: 1rem;
     }
 
+    #chart-col {
+        width: 100%;
+        padding: 0px;
+        
+    }
+    
+
     .more-padding-bold-sides-only {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
@@ -1300,6 +1310,7 @@ header .overlay {
         padding: 3rem !important;
     }
 
+    
 }  
 
 /* Medium devices (landscape tablets, 768px and up) */
