@@ -179,6 +179,23 @@ header .overlay {
     padding-right: 5rem !important;
 }
 
+.padding-text {
+   
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+}
+
+
+
+.padding-text-small-bottom {
+    padding-left:3rem;
+    padding-right:3rem;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+
+}
+
 
 .no-padding {
     padding: 0 !important;
@@ -1310,7 +1327,22 @@ header .overlay {
         padding: 3rem !important;
     }
 
+    .padding-text {
+   
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     
+    }
+    
+    
+    
+    .padding-text-small-bottom {
+        padding-left:3rem;
+        padding-right:3rem;
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+    
+    }
 }  
 
 /* Medium devices (landscape tablets, 768px and up) */
