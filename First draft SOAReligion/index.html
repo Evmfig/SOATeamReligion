@@ -424,10 +424,10 @@
 
         // CHART!!
         Chart.defaults.global.defaultFontColor = 'white';
-        Chart.defaults.global.defaultFontFamily = 'Barlow';
-        Chart.defaults.global.defaultFontSize = '14';
+        Chart.defaults.global.defaultFontStyle = 'bold';
         Chart.defaults.global.tooltips.backgroundColor = 'rgba(216,217,217,0.6)';
-        Chart.defaults.global.tooltips.bodyMarginBottom = '9';
+    
+        
         
 
 
@@ -457,7 +457,7 @@
 
 
                 "datasets": [{
-                    "label": "Number of Locations per Spirituality in Athens",
+                    "label": "Number of Locations",
                     "data": [1, 2, 2, 1, 2, 7, 3, 1, 1, 1, 1, 6, 2, 2, 1, ],
                     "fill": false,
                     "backgroundColor": [
@@ -485,11 +485,11 @@
                     "xAxes": [{
                         "ticks": {
                             "beginAtZero": true,
-                            
+                            "fontSize": "14"
 
                         },
                         "gridLines": {
-                            "color": "rgba(216,217,217,0.25)"
+                            "color": "rgba(216,217,217,0.3)"
                             
                         }
                     }]
