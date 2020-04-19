@@ -73,7 +73,6 @@ font-family: 'EB Garamond', serif; */
 
 .section-text {
     padding: 60px;
-    display: ;
 }
 
 .section-text-sides-only {
@@ -148,6 +147,10 @@ footer a {
 
 /* ---------- TEXT STYLING ---------- */
 /* Heading and Text Styling */
+#logo {
+    width: 40%;
+}
+
 #logo h5 {
     color: black;
     line-height: 1.1rem;
@@ -231,17 +234,13 @@ h5 {
     font-weight: 800;
     font-size: 1.2rem;
     margin-bottom: 1rem;
-
 }
-
-
 
 h6 {
     font-family: 'Barlow', sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 1rem;
-
 }
 
 p {
@@ -268,12 +267,9 @@ li {
 
 
 .info {
-    background-color:
-        #efefef;
+    background-color: #efefef;
     padding: 50px;
-    margin-top: ;
     color: #6c6c6c;
-
 }
 
 #pillars {
@@ -302,6 +298,18 @@ a:active {
     text-decoration: underline;
 }
 
+.top-nav-active {
+    background-color: white;
+    border: 1px solid #F2B646;
+    padding: 10px 24px;
+}
+
+.bottom-nav-active {
+    background-color: white;
+    border: 1px solid #F2B646;
+    padding: 3px 24px;
+}
+
 #thin {
     font-weight: 400;
 }
@@ -321,7 +329,7 @@ img {
 }
 
 .portrait {
-   
+
     border-radius: 50%;
     object-fit: cover;
     padding: 50px 0 50px 0;
@@ -392,13 +400,8 @@ img {
 
 
 #barb-story {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 2.5rem;
+    padding: 0px;
     border-right: 1px solid lightgray;
-
-
 }
 
 #danny-story {
@@ -407,13 +410,8 @@ img {
 }
 
 #habiba-story {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    padding-left: 2.5rem;
+    padding: 0px;
     border-left: 1px solid lightgray;
-
-
 }
 
 .pull-quote {
@@ -538,7 +536,7 @@ img {
     }
 
     .flag-img {
-       margin-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     #barb-story {
@@ -555,7 +553,7 @@ img {
         padding-left: 1rem;
     }
 
-    
+
     footer p {
         line-height: 1.1rem;
         margin-bottom: 0.5rem;
