@@ -516,9 +516,15 @@ img {
 
 @media screen and (max-width: 800px) {
 
-    .top-nav a {
-        margin-top: 1rem;
-    }
+.top-nav-active {
+    padding: 8px 15px;
+}
+   
+.top-nav {
+    text-align: right;
+    margin-top: 0px;
+    margin-left: 15px;
+}
 
     #name {
         font-size: 3.5rem;
