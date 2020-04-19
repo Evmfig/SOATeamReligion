@@ -149,15 +149,12 @@ footer a:hover {
 .soa-logo {
     max-width: 150px;
     margin-top: 3rem;
-    
-    
 }
 
 .back-to-top {
     font-family: 'Barlow', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    border: ;
     background-color: #eceded;
     text-align: center;
     padding-top: 7px;
@@ -584,9 +581,9 @@ img {
     .soa-logo {
         max-width: 150px;
         margin-top: 0.4rem;
-        
+
     }
-    
+
 
 
 }
