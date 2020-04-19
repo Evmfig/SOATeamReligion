@@ -36,7 +36,10 @@ h3,
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
-    font-size: 5rem;
+    font-size: 3rem !important;
+    margin-top: 0px !important; 
+    margin-bottom: 0px !important; 
+
     /* color: var(--dk-yellow); */
 }
 
@@ -285,8 +288,8 @@ header .overlay {
     margin-top: -2rem;
 }
 
-.margin-left {
-    margin-left: ;
+.margin-right {
+    margin-right: 1rem;
 }
 
 .padding-bottom {
@@ -959,6 +962,7 @@ header .overlay {
 }
 
 .w3-animate-fading2 {
+    
     animation: fading 8s infinite;
 }
 
@@ -972,6 +976,12 @@ header .overlay {
 
 .w3-animate-fading5 {
     animation: fading 2s infinite;
+}
+
+#title-row1 {
+
+    padding: 0px;
+    
 }
 
 /* arrow */
