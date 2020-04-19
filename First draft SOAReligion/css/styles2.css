@@ -144,7 +144,7 @@ header .overlay {
     width: 100%;
     background-color: black;
     opacity: 0.5;
-    z-index: 1;
+    z-index: ;
 }
 
 /* MARGINS, PADDING */
@@ -180,6 +180,10 @@ header .overlay {
 .more-padding-bold-sides-only {
     padding-left: 5rem !important;
     padding-right: 5rem !important;
+}
+
+.padding-title {
+    padding: 11rem;
 }
 
 .padding-text {
@@ -957,21 +961,21 @@ header .overlay {
 /* Animation title */
 
 .w3-animate-fading1 {
-    animation: fading 5s infinite;
+    animation: fading 6s infinite;
 
 }
 
 .w3-animate-fading2 {
     
-    animation: fading 8s infinite;
+    animation: fading 5s infinite;
 }
 
 .w3-animate-fading3 {
-    animation: fading 10s infinite;
+    animation: fading 7s infinite;
 }
 
 .w3-animate-fading4 {
-    animation: fading 15s infinite;
+    animation: fading 4s infinite;
 }
 
 .w3-animate-fading5 {
@@ -986,14 +990,15 @@ header .overlay {
 
 /* arrow */
 .arrowbutton {
-    border: solid white;
-    border-width: 0 6px 6px 0;
+    border: solid rgba(255,255,255,0.5);
+    
+    border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 25px;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 4rem;
-    margin-left: 2rem;
+    margin-left: ;
 }
 
 .right {
@@ -1337,6 +1342,10 @@ header .overlay {
         padding: 3rem !important;
     }
 
+    .padding-title {
+        padding: 3rem;
+    }
+
     .padding-text {
    
         padding-top: 8rem;
@@ -1349,7 +1358,7 @@ header .overlay {
     .padding-text-small-bottom {
         padding-left:3rem;
         padding-right:3rem;
-        padding-top: 8rem;
+        padding-top: 4rem;
         padding-bottom: 2rem;
     
     }
