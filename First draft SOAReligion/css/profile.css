@@ -126,7 +126,7 @@ footer {
 }
 
 footer a:visited {
-    color: #efa316;
+    color: #6d6e6e;
 
 }
 
@@ -142,13 +142,13 @@ footer p {
     line-height: 1.2rem;
 }
 
-footer a {
+footer a:hover {
     color: #efa316;
 }
 
 .soa-logo {
     max-width: 150px;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     
     
 }
