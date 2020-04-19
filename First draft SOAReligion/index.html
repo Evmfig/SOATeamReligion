@@ -30,7 +30,7 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-        
+
 
     <!-- Mapbox CSS -->
     <link href='https://www.unpkg.com/mapbox-gl/dist/mapbox-gl.css' rel='stylesheet' />
@@ -53,53 +53,67 @@
     <!-- video background new -->
     <header>
         <div class="container-fluid justify-content-center padding-title">
-                <div class="col-md-6 no-margin text-white">
-                    <!-- TITLE FADING -->
-                    <div class="row" id="title-row1">
-                        <h1 class="w3-animate-fading1 font-weight-bold">BELIEFS </h1>
-                    </div>
-                    <div class="row" id="title-row1">
-                        <h1 class="w3-animate-fading2 font-weight-bold">RELIGION </h1>
-                    </div>  
-                    <div class="row" id="title-row1">
-                        <h1 class="w3-animate-fading3 font-weight-bold">FAITH </h1>
-                    </div>
-                    <div class="row"> 
-                           <h1 class="w3-animate-fading4 font-weight-bold margin-right">SPIRITUALITY</h1>
-                        <h1 class="font-weight-bold"><span class="font-weight-lighter">
-                                    IN</span>
-                                ATHENS</h1>
-                    </div>
+            <div class="col-md-6 no-margin text-white">
+                <!-- TITLE FADING -->
+                <div class="row" id="title-row1">
+                    <h1 class="w3-animate-fading1 font-weight-bold">BELIEFS </h1>
                 </div>
-            
-
-            <!-- DOWN ARROW -->
-            <div class="container no-margin">
-                <a href="#subhead" class="w3-animate-fading5 arrowbutton down js-scroll-trigger"></a>
+                <div class="row" id="title-row1">
+                    <h1 class="w3-animate-fading2 font-weight-bold">RELIGION </h1>
+                </div>
+                <div class="row" id="title-row1">
+                    <h1 class="w3-animate-fading3 font-weight-bold">FAITH </h1>
+                </div>
+                <div class="row">
+                    <h1 class="w3-animate-fading4 font-weight-bold margin-right">SPIRITUALITY</h1>
+                    <h1 class="font-weight-bold"><span class="font-weight-lighter">
+                            IN</span>
+                        ATHENS</h1>
+                </div>
             </div>
-        </div>        
+            <div class="row" id="title-row1">
+                <h1 class="w3-animate-fading3 font-weight-bold">FAITH </h1>
+            </div>
+            <div class="row">
+                <h1 class="w3-animate-fading4 font-weight-bold margin-right">SPIRITUALITY</h1>
+                <h1 class="font-weight-bold"><span class="font-weight-lighter">
+                        IN</span>
+                    ATHENS</h1>
+            </div>
+        </div>
+
+
+        <!-- DOWN ARROW -->
+        <div class="container no-margin">
+            <a href="#subhead" class="w3-animate-fading5 arrowbutton down js-scroll-trigger"></a>
+        </div>
+        </div>
         <div class="overlay bkgd-image-5"></div>
 
     </header>
 
     <!-- DESCRIPTION -->
     <div class="wrapper bg-dark padding-text-small-bottom">
-        <div class="row justify-content-center">
+        <div id="subhead" class="row justify-content-center">
             <div class="col-md-8   w-100 ">
                 <p class="display-6 text-white">Settled among the predominantly Protestant hills of
                     Appalachia and home to Ohio University, Athens, Ohio stands out as a hub for education, community,
-                    and diversity. Since the town was founded in 1805, many religious and spiritual communities have
-                    emerged, each establishing their own formal and informal practice locations.</p>
+                    and diversity. Since the town's founding in 1805, it has often been called a "bubble" of
+                    inclusivity, and because of this many religious and spiritual communities have
+                    emerged here, with each establishing their own formal and informal practice locations.</p>
+                <p class="display-6 text-white">The map below labels every religious building within the city, color
+                    coded by denomination. The bar graph below it further illustrates the comparable number of locations
+                    per denomination to show the extent of Athens's diversity.</p>
             </div>
         </div>
     </div>
 
     <!-- MAP and BAR CHART -->
 
-    <div id="subhead" class="wrapper bg-dark more-padding-bold-sides-only">
+    <div class="wrapper bg-dark more-padding-bold-sides-only">
         <div class="row flex-row justify-content-center" id="infographics-row">
             <div class="col-md-4">
-                <p class="text-white map-title">LOCATIONS OF SPIRITUAL CENTERS IN ATHENS</h6>
+                <p class="text-white map-title">Locations of Spiritual Centers in Athens</h6>
                     <div id="map">
                     </div>
             </div>
@@ -207,39 +221,27 @@
         </div>
     </div>
 
-    <div class="wrapper bg-dark padding-text-small-bottom">
-        <div class="row justify-content-center">
-            <div class="col-md-8 w-100 ">
-                <p class=" display-6 text-white">While many spiritual communities are represented in
-                    Athens, they do not all experience the same access to resources needed to practice together.</p>
-            </div>
-        </div>
-    </div>
-
-
-  
-
-
     <div class="wrapper bg-dark more-padding-bold-sides-only">
         <div class="row justify-content-center">
             <!-- BAR CHART -->
-            <div class="col" id="chart-col">
-                <p class="text-white map-title">NUMBER OF CENTERS PER SPIRITUALITY</p>
+            <div class="col pt-5" id="chart-col">
+                <p class="text-white map-title">Number of Centers Per Spirituality</p>
                 <canvas id="horizontalBar" style="display: block; height: 100%; width: 100%;"></canvas>
             </div>
         </div>
     </div>
 
 
-
     <!-- SECOND DESCRIPTION -->
     <div class="wrapper bg-dark padding-text-small-bottom">
-        <div class="row justify-content-center margin-top">
+        <div class="row justify-content-center">
             <div class="col-md-8 w-100 ">
+                <p class=" display-6 text-white">While many spiritual communities are represented in
+                    Athens, they do not all experience the same access to resources needed to practice together.</p>
                 <p class="display-6 text-white">
                     We spoke to three people from local spiritual communities to hear how the city of Athens has
-                    shaped their spiritual experience. Continue below to learn more about Barb, Danny, and
-                    Habiba! </p>
+                    shaped their spiritual experience. Continue below to learn more about Barb Harrison, Danny Yahini,
+                    and Habiba Abdelaal.</p>
             </div>
         </div>
     </div>
@@ -250,12 +252,12 @@
     <!-- Choose a story -->
     <div class="container-fluid bg-dark">
         <div class="row padding-bottom margin-top>
-            <div class="col-12">
+            <div class=" col-12">
 
-                <div class="hr-sect h5 text-white">CHOOSE A STORY</div>
+            <div class="hr-sect h5 text-white">CHOOSE A STORY</div>
 
-            </div>
         </div>
+    </div>
     </div>
 
     <!-- Profile page -->
@@ -434,13 +436,13 @@
         Chart.defaults.global.defaultFontColor = 'white';
         Chart.defaults.global.defaultFontStyle = 'bold';
         Chart.defaults.global.tooltips.backgroundColor = 'rgba(216,217,217,0.6)';
-    
+
 
         new Chart(document.getElementById("horizontalBar"), {
             "type": "horizontalBar",
             "data": {
                 "labels":
-                    
+
                     [
                         'Buddhist',
                         'Catholic',
@@ -458,7 +460,7 @@
                         'Presbyterian',
                         'Seventh-Day Adventist',
                     ],
-                        
+
 
 
                 "datasets": [{
@@ -491,19 +493,19 @@
                         "ticks": {
                             "beginAtZero": true,
                             "fontSize": "14",
-                            
+
 
                         },
                         "gridLines": {
                             "color": "rgba(216,217,217,0.3)"
-                            
+
                         }
                     }],
 
-                    
+
                 },
 
-                
+
 
                 "legend": {
                     "display": false,
@@ -513,9 +515,6 @@
                 }
             }
         });
-
-
-       
     </script>
 </body>
 
