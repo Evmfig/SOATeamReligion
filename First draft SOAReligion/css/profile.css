@@ -127,9 +127,7 @@ footer {
 
 footer a:visited {
     color: #6d6e6e;
-
 }
-
 
 footer p {
     font-family: 'Barlow', sans-serif;
@@ -513,15 +511,14 @@ img {
 
 @media screen and (max-width: 800px) {
 
-.top-nav-active {
-    padding: 8px 15px;
-}
-   
-.top-nav {
-    text-align: right;
-    margin-top: 0px;
-    margin-left: 15px;
-}
+    .top-nav-active {
+        padding: 8px 15px;
+    }
+
+    .top-nav {
+        text-align: right;
+        margin-left: 15px;
+    }
 
     #name {
         font-size: 3.5rem;
@@ -590,11 +587,15 @@ img {
 
     }
 
+    .top-nav-active {
+        padding: 10px 24px;
+    }
 
+    .bottom-nav-active {
+        padding: 3px 24px;
+    }
 
 }
-
-
 
 
 @media screen and (min-width: 800px) {}
