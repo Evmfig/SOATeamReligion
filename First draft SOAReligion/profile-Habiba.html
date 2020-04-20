@@ -238,24 +238,23 @@
                 <div class="hr-sect">CHOOSE A STORY</div>
             </div>
         </div>
-
-        <!----- Next Story Selection ----->
-        <section class="container">
-            <div class="section-end margin-top-small">
-                <div class="col-sm-2 align-text-center" id="barb-story">
-                    <h3><a href="profile-Barb.html">BARB </a></h3>
-                    <h6 id="practicing2">Practices<br>Paganism</h6>
-                </div>
-                <div class="col-sm-2 align-text-center" id="danny-story">
-                    <h3><a href="profile-Danny.html">DANNY </a></h3>
-                    <h6 id="practicing2">Practices<br>Buddhism</h6>
-                </div>
-                <div class="col-sm-2 align-text-center" id="habiba-story">
-                    <h3><a class="bottom-nav-active" href="profile-Habiba.html">HABIBA</a></h3>
-                    <h6 id="practicing2">Practices<br>Islam</h6>
-                </div>
+    </section>
+    <!----- Next Story Selection ----->
+    <section class="container">
+        <div class="section-end margin-top-small">
+            <div class="col-sm-2 align-text-center" id="barb-story">
+                <h3><a href="profile-Barb.html">BARB </a></h3>
+                <h6 id="practicing2">Practices<br>Paganism</h6>
             </div>
-        </section>
+            <div class="col-sm-2 align-text-center" id="danny-story">
+                <h3><a href="profile-Danny.html">DANNY </a></h3>
+                <h6 id="practicing2">Practices<br>Buddhism</h6>
+            </div>
+            <div class="col-sm-2 align-text-center" id="habiba-story">
+                <h3><a class="bottom-nav-active" href="profile-Habiba.html">HABIBA</a></h3>
+                <h6 id="practicing2">Practices<br>Islam</h6>
+            </div>
+        </div>
     </section>
 
     <!----- Footer ----->
@@ -278,7 +277,9 @@
                     <p><strong>Max Catalano</strong>
                 </a> / Media Producer, Video Editor</p>
                 <p><strong>Jenna Hyman</strong> / Media Producer, Photo Editor</p>
-                <p><strong>Kathryn Maynard </strong>/ Illustrator, UX Designer</p>
+                <a href="http://linkedin.com/in/kathryn-maynard1110">
+                    <p><strong>Kathryn Maynard </strong>
+                </a>/ Illustrator, UX Designer</p>
                 <a href="https://www.linkedin.com/in/sarah-melaragno-b484ba178/">
                     <p><strong>Sarah Melaragno</strong>
                 </a> / Infographic Creator, UX Designer</p>
@@ -330,7 +331,8 @@
         map.on('click', function (e) {
             var features = map.queryRenderedFeatures(e.point, {
                 layers: ['all-protestantchristian-denomina', 'islam-habiba', 'interfaith',
-                    'catholic-churches', 'buddhist-danny', 'jewish', 'non-denominational'
+                    'catholic-churches', 'buddhist-danny', 'jewish', 'non-denominational',
+                    'habiba-med-room-only'
                 ] // replace this with the name of the layer
             });
 
