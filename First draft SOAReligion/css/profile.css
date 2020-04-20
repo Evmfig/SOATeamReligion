@@ -261,14 +261,8 @@ h6 {
 
 p {
     font-family: 'EB Garamond', serif;
-    font-size: 19px;
     line-height: 1.5rem;
 }
-
-ol p {
-    margin-top: 0.6rem;
-    color: #818282;
-    overflow: auto;
     font-family: 'Barlow', sans-serif;
     font-size: 0.8rem;
     line-height: 1rem;
