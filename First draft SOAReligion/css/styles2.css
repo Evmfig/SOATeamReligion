@@ -36,7 +36,10 @@ h3,
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
-    font-size: 5rem;
+    font-size: 3rem !important;
+    margin-top: 0px !important; 
+    margin-bottom: 0px !important; 
+
     /* color: var(--dk-yellow); */
 }
 
@@ -141,7 +144,7 @@ header .overlay {
     width: 100%;
     background-color: black;
     opacity: 0.5;
-    z-index: 1;
+    z-index: ;
 }
 
 /* MARGINS, PADDING */
@@ -177,6 +180,27 @@ header .overlay {
 .more-padding-bold-sides-only {
     padding-left: 5rem !important;
     padding-right: 5rem !important;
+}
+
+.padding-title {
+    padding: 11rem;
+}
+
+.padding-text {
+   
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+}
+
+
+
+.padding-text-small-bottom {
+    padding-left:3rem;
+    padding-right:3rem;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+
 }
 
 
@@ -268,8 +292,12 @@ header .overlay {
     margin-top: -2rem;
 }
 
-.margin-left {
-    margin-left: ;
+.margin-right {
+    margin-right: 1rem;
+}
+
+.padding-bottom {
+    padding-bottom: 2rem;
 }
 
 .show-bkgd {
@@ -933,36 +961,44 @@ header .overlay {
 /* Animation title */
 
 .w3-animate-fading1 {
-    animation: fading 5s infinite;
+    animation: fading 6s infinite;
 
 }
 
 .w3-animate-fading2 {
-    animation: fading 8s infinite;
+    
+    animation: fading 5s infinite;
 }
 
 .w3-animate-fading3 {
-    animation: fading 10s infinite;
+    animation: fading 7s infinite;
 }
 
 .w3-animate-fading4 {
-    animation: fading 15s infinite;
+    animation: fading 4s infinite;
 }
 
 .w3-animate-fading5 {
     animation: fading 2s infinite;
 }
 
+#title-row1 {
+
+    padding: 0px;
+    
+}
+
 /* arrow */
 .arrowbutton {
-    border: solid white;
-    border-width: 0 6px 6px 0;
+    border: solid rgba(255,255,255,0.5);
+    
+    border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 25px;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 4rem;
-    margin-left: 2rem;
+    margin-left: ;
 }
 
 .right {
@@ -1169,39 +1205,39 @@ header .overlay {
 }
 
 #baptist-circle {
-    background-color: #8D0C15;
+    background-color: #99000a;
 }
 
 #churchofgod-circle {
-    background-color: #BC101C;
+    background-color: #b3000c;
 }
 
 #episcopal-circle {
-    background-color: #EB1423;
+    background-color: #cc000e;
 }
 
 #evangelical-circle {
-    background-color: #EF434F;
+    background-color: #ff1a29;
 }
 
 #lutheran-circle {
-    background-color: #F3727B;
+    background-color: #ff6670;
 }
 
 #methodist-circle {
-    background-color: #F7A1A7;
+    background-color: #ff99a0;
 }
 
 #pentecostal-circle {
-    background-color: #fac7ca;
+    background-color: #ffc2c6;
 }
 
 #presbyterian-circle {
-    background-color: #FCDADC;
+    background-color: #ffdbde;
 }
 
 #SDA-circle {
-    background-color: #fde8e9;
+    background-color: #fff0f0;
 }
 
 
@@ -1230,6 +1266,13 @@ header .overlay {
     font-style: italic;
 }
 
+#chart-col {
+    max-width: 700px;
+}
+
+#horizontalBar {
+    font-family: 'Barlow', sans-serif !important;
+}
 
 
 
@@ -1279,6 +1322,13 @@ header .overlay {
         margin-top: 1rem;
     }
 
+    #chart-col {
+        width: 100%;
+        padding: 0px;
+        
+    }
+    
+
     .more-padding-bold-sides-only {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
@@ -1292,6 +1342,26 @@ header .overlay {
         padding: 3rem !important;
     }
 
+    .padding-title {
+        padding: 3rem;
+    }
+
+    .padding-text {
+   
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    
+    }
+    
+    
+    
+    .padding-text-small-bottom {
+        padding-left:3rem;
+        padding-right:3rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    
+    }
 }  
 
 /* Medium devices (landscape tablets, 768px and up) */
