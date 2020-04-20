@@ -104,6 +104,8 @@ p {
     font-family: 'EB Garamond', serif;
     margin-top: -4px;
     margin-bottom: 1rem;
+    font-size: 19px;
+    line-height: 1.5rem;
 }
 
 /* video background */
@@ -145,6 +147,11 @@ header .overlay {
     background-color: black;
     opacity: 0.5;
     z-index: ;
+}
+
+a:hover {
+    color: none;
+
 }
 
 /* MARGINS, PADDING */
@@ -1104,7 +1111,7 @@ header .overlay {
 
 .mapboxgl-popup-content h3 {
     font-family: 'Barlow', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     font-weight: 400;
 }
 
@@ -1277,7 +1284,7 @@ header .overlay {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 
     #map {
         min-height: 250px;
