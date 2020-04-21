@@ -1269,7 +1269,6 @@ a:hover {
     #key-container {
         margin-top: 2rem;
         margin-left: 0rem;
-        max-width: ;
     }
 
     .margin-center3 {
@@ -1277,30 +1276,35 @@ a:hover {
         margin-right: 1rem;
         margin-top: 23rem;
     }
-    
+
     .button1 span {
         line-height: 2.5rem;
     }
+
     .button2 span {
         line-height: 2.5rem;
     }
 
     .button3 span {
         line-height: 2.5rem;
-    
+
     }
+
     .button1 span:after {
         color: #F2B646;
         opacity: 100;
     }
+
     .button2 span:after {
         color: #F2B646;
         opacity: 100;
     }
+
     .button3 span:after {
         color: #F2B646;
         opacity: 100;
     }
+
     .display-5 {
         font-size: 1.3rem;
         font-style: italic;
@@ -1308,12 +1312,12 @@ a:hover {
         /* margin-bottom: 2rem; */
         letter-spacing: 0.2px;
     }
-    
-    
+
+
 }
 
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 768px) {
 
     #map {
         min-height: 250px;
@@ -1389,7 +1393,7 @@ a:hover {
 
     }
 
-    
+
     .margin-left {
         margin-left: 0rem;
     }

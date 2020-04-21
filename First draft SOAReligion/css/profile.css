@@ -307,14 +307,14 @@ a:active {
 
 .top-nav-active {
     background-color: white;
-    border: 1px solid #F2B646;
-    padding: 10px 24px;
+    border: 2px solid #F2B646;
+    padding: 10px 12px;
 }
 
 .bottom-nav-active {
     background-color: white;
-    border: 1px solid #F2B646;
-    padding: 3px 24px;
+    border: 2px solid #F2B646;
+    padding: 3px 12px;
 }
 
 #thin {
@@ -502,7 +502,7 @@ img {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1200px) {
-    
+
 
     p {
         font-size: 20px;
@@ -513,12 +513,13 @@ img {
         font-weight: 300;
         font-size: 15px;
         line-height: 1.1rem;
-    
+
     }
+
     .container-rug-sec {
         display: flex;
         flex-direction: row;
-    } 
+    }
 
 }
 
@@ -530,7 +531,7 @@ img {
     }
 
     #pillars {
-        margin-right:0px;
+        margin-right: 0px;
     }
 
     .top-nav-active {
@@ -577,6 +578,7 @@ img {
 
 
     }
+
     .container-rug-sec {
         display: flex;
         flex-direction: column;
