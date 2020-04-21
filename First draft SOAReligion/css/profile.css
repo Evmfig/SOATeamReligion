@@ -515,11 +515,23 @@ img {
         line-height: 1.1rem;
     
     }
+    .container-rug-sec {
+        display: flex;
+        flex-direction: row;
+    } 
 
 }
 
 
 @media screen and (max-width: 768px) {
+
+    #overflow-scroll {
+        overflow: scroll;
+    }
+
+    #pillars {
+        margin-right:0px;
+    }
 
     .top-nav-active {
         padding: 8px 15px;
@@ -565,6 +577,10 @@ img {
 
 
     }
+    .container-rug-sec {
+        display: flex;
+        flex-direction: column;
+    }
 
     .flag-img {
         margin-bottom: 1.5rem;
@@ -602,7 +618,7 @@ img {
     }
 
     .bottom-nav-active {
-        padding: 3px 24px;
+        padding: 5px 8px;
     }
 
 }
