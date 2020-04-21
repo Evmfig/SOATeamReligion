@@ -500,8 +500,26 @@ img {
 
 /* ---------- MEDIA QUERIES ---------- */
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) {
+    
 
-@media screen and (max-width: 800px) {
+    p {
+        font-size: 20px;
+    }
+
+    .caption {
+        padding: 15px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 1.1rem;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
 
     .top-nav-active {
         padding: 8px 15px;
@@ -588,6 +606,3 @@ img {
     }
 
 }
-
-
-@media screen and (min-width: 800px) {}

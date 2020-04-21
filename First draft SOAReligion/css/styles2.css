@@ -1250,8 +1250,70 @@ a:hover {
 
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 800px) {
+/* ---------- MEDIA QUERIES ---------- */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) {
+
+    #key-main-row {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0rem;
+
+    }
+
+    .padding-title {
+        padding: 10rem;
+    }
+
+    #key-container {
+        margin-top: 2rem;
+        margin-left: 0rem;
+        max-width: ;
+    }
+
+    .margin-center3 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 23rem;
+    }
+    
+    .button1 span {
+        line-height: 2.5rem;
+    }
+    .button2 span {
+        line-height: 2.5rem;
+    }
+
+    .button3 span {
+        line-height: 2.5rem;
+    
+    }
+    .button1 span:after {
+        color: #F2B646;
+        opacity: 100;
+    }
+    .button2 span:after {
+        color: #F2B646;
+        opacity: 100;
+    }
+    .button3 span:after {
+        color: #F2B646;
+        opacity: 100;
+    }
+    .display-5 {
+        font-size: 1.3rem;
+        font-style: italic;
+        line-height: 1.2;
+        /* margin-bottom: 2rem; */
+        letter-spacing: 0.2px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 768px)  {
 
     #map {
         min-height: 250px;
