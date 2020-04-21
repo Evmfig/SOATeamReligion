@@ -624,3 +624,15 @@ img {
     }
 
 }
+
+/* --- animation interactive ---- */
+
+svg text {
+    display: none;
+
+}
+
+svg g:hover text {
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
