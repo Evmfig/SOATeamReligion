@@ -1048,6 +1048,7 @@ a:hover {
 #infographics-row {
     display: flex;
     align-items: flex-end;
+    flex-direction: ;
 }
 
 
@@ -1059,6 +1060,7 @@ a:hover {
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.2rem;
+    padding-left: 7rem;
 }
 
 #map {
@@ -1102,13 +1104,13 @@ a:hover {
 #key-container {
     display: flex;
     flex-direction: column;
-    max-width: 380px;
+    max-width: ;
     height: 100%;
     padding: 30px;
     border: 1px solid rgba(99, 99, 99, 0.7);
     background-color: rgba(99, 99, 99, 0.5);
 
-    margin-left: 2rem;
+    margin-left: ;
 
 }
 
@@ -1240,9 +1242,7 @@ a:hover {
     font-style: italic;
 }
 
-#chart-col {
-    max-width: 700px;
-}
+
 
 #horizontalBar {
     font-family: 'Barlow', sans-serif !important;
@@ -1254,6 +1254,18 @@ a:hover {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1200px) {
+
+    p {
+        font-size: 20px;
+        line-height: 1.5rem;
+    }
+
+
+    .map-title  {
+        margin-top: 2rem;
+        padding-left:0px;   
+    }
+
 
     #key-main-row {
         display: flex;
@@ -1323,8 +1335,9 @@ a:hover {
         min-height: 250px;
     }
 
-    .map-title {
+    .map-title  {
         margin-top: 2rem;
+        padding-left:0px;   
     }
 
     #key-container {
