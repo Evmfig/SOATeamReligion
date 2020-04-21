@@ -373,6 +373,11 @@ img {
     text-align: center;
 }
 
+.align-text-center-bell {
+    text-align: center;
+    padding: 3rem;
+}
+
 .align-text-right {
     text-align: right;
 }
